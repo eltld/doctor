@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+    
+<!--     <FrameLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/topbg_green"
+    	android:minHeight="60dp" >
+    	
+        <TextView
+        android:id="@+id/top_title"
+        style="@style/text" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:paddingTop="5dp"
+    		android:paddingBottom="5dp"
+        	android:layout_gravity="center_vertical|right"
+        	android:orientation="vertical"
+        	android:layout_marginRight="10dp">
+        	<Button
+		        android:id="@+id/btn_addhealth"
+		        android:layout_width="60dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical|right"
+		        android:background="@color/transparent"
+		        android:minHeight="0dp"
+		        android:minWidth="0dp"
+		        android:onClick="doClick"
+		        android:text="菜单"
+		        android:textColor="@color/white"
+		        />
+        	
+        	<Button
+        		android:id="@+id/btn_massMessage"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="8dp"
+		        android:layout_gravity="center_vertical|right"
+		        android:background="@color/transparent"
+		        android:minHeight="0dp"
+		        android:minWidth="0dp"
+		        android:onClick="doClick"
+		        android:text="消息群发"
+		        android:textColor="@color/white"/>
+        	
+         </LinearLayout>
+    </FrameLayout> -->
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+
+            <EditText
+                android:id="@+id/search_edt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingLeft="8dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:visibility="invisible"
+                android:src="@drawable/ic_home_search_nor"
+                 />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel"
+            android:textColor="@color/topbg_green"
+            android:visibility="gone" />
+    </LinearLayout>
+<!--      
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8E8E8"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_search_box"
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_conner_nostroke"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" >
+            
+		    <ImageView
+	            android:id="@+id/bt_keyword_search"
+	            android:layout_width="14dp"
+	            android:layout_height="14dp"
+	            android:background="@drawable/search_icon"
+	            android:clickable="true"
+	            android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="搜索患者"
+		        android:textColor="#909090"
+		        />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="10dp"
+	        >
+	        <ImageView 
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/group_icon"
+	            />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="20dp"
+	            android:text="患者分组"
+	            android:textSize="16sp"
+	            android:textColor="#606060"
+	            />
+	    </LinearLayout>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="#dfdfdf"
+	        />
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="10dp"
+	        >
+	        <ImageView 
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/address_book_icon"
+	            />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="20dp"
+	            android:text="患者通讯录"
+	            android:textSize="16sp"
+	            android:textColor="#606060"
+	            />
+	    </LinearLayout>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="#dfdfdf"
+	        />
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:padding="10dp"
+	        >
+	        <ImageView 
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:background="@drawable/order_icon"
+	            />
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="20dp"
+	            android:text="订单服务"
+	            android:textSize="16sp"
+	            android:textColor="#606060"
+	            />
+	    </LinearLayout>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="#dfdfdf"
+	        android:layout_marginBottom="30dp"
+	        />
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0.01dp"
+	        android:background="#f3f3f3"
+	        />
+	</LinearLayout>
+						-->
+		
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+        android:id="@+id/ptr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textColor="@color/huise"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/rl_error_item"
+            layout="@layout/chat_neterror_item"
+            android:visibility="gone" />
+
+        <net.ememed.doctor2.widget.RefreshListView
+            android:id="@+id/ptr_listview"
+            style="@style/listview_style"
+            android:divider="@color/white"
+            android:layout_height="fill_parent" />
+
+        <include
+            layout="@layout/u_empty_view"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/u_net_unavailable"
+            android:visibility="gone" />
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+
+</LinearLayout>

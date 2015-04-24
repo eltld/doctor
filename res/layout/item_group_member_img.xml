@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <net.ememed.doctor2.widget.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_portrait"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/default_avatar"
+        app:border_color="@color/white"
+        app:border_width="1dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_portrait"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:textColor="@color/grayness"
+        android:text="林风" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="32dp"
+        android:padding="8dp"
+        android:src="@drawable/delete_person"
+        android:visibility="gone" />
+
+</RelativeLayout>

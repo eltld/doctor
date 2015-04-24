@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/prime_green" >
+
+    <TextView
+        android:id="@+id/tv_back"
+        style="@style/title_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/selector_title_bar_back"
+        android:gravity="center"
+        android:onClick="onBack"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:text="返回" />
+
+    <TextView
+        android:id="@+id/tv_top_title"
+        style="@style/title_prime"
+        android:layout_centerInParent="true"
+        android:text="我的访客" />
+
+    <TextView
+        android:id="@+id/tv_top_right"
+        style="@style/title_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:minWidth="48dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="8dp"
+        android:text="下一步"
+        android:visibility="gone" />
+
+</RelativeLayout>

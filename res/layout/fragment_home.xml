@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/reseda"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dip" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_news"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/album_nophoto"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="15dip"
+                        android:layout_gravity="bottom"
+                        android:background="@color/transparent"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_dot_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dip"
+                            android:layout_marginRight="6dip"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_notice_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/list_item_default"
+                        android:clickable="true" >
+
+                        <FrameLayout
+                            android:id="@+id/contact_image"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@color/home_notice_pink" >
+
+                            <ImageView
+                                android:id="@+id/image_person"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_notice_take_cash" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_notice_txt_area"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/notice_title_take_cash"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/notice_title_take_cash"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_notice_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:singleLine="true"
+                                android:text="@string/notice_demo_take_cash"
+                                android:textColor="@color/light_gray" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/image_person1"
+                            style="@style/style_notice_count_button"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:text="1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/list_item_default"
+                        android:clickable="true" >
+
+                        <FrameLayout
+                            android:id="@+id/contact_image1"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@color/home_notice_green" >
+
+                            <ImageView
+                                android:id="@+id/image_person2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_notice_textconsult" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_notice_txt_area1"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_notice_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/notice_title_textconsult"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_notice_info1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:singleLine="true"
+                                android:text="@string/notice_demo_textconsult"
+                                android:textColor="@color/light_gray" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/image_person3"
+                            style="@style/style_notice_count_button"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:text="1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/list_item_default"
+                        android:clickable="true" >
+
+                        <FrameLayout
+                            android:id="@+id/contact_image2"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@color/home_notice_blue" >
+
+                            <ImageView
+                                android:id="@+id/image_person4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_notice_sign" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_notice_txt_area2"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_notice_title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/notice_title_sign"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_notice_info3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:singleLine="true"
+                                android:text="@string/notice_demo_sign"
+                                android:textColor="@color/light_gray" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/image_person5"
+                            style="@style/style_notice_count_button"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:text="2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/list_item_default"
+                        android:clickable="true" >
+
+                        <FrameLayout
+                            android:id="@+id/contact_image6"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@color/home_notice_yellow" >
+
+                            <ImageView
+                                android:id="@+id/image_person7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_notice_tijian" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_notice_txt_area7"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_notice_title4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/notice_title_tijian"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_notice_info4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:singleLine="true"
+                                android:text="@string/notice_demo_tijian"
+                                android:textColor="@color/light_gray" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/image_person6"
+                            style="@style/style_notice_count_button"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:text="3" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+
+</LinearLayout>

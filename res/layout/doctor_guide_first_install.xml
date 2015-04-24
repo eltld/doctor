@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </android.support.v4.view.ViewPager>
+<!-- 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/guider_bottom" />
+ -->
+    <RelativeLayout
+        android:id="@+id/guider_ll_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+         >
+
+        <View
+            android:id="@+id/view_centre"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+          <ImageView
+            android:id="@+id/guide_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/view_centre"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/login_btn"
+            android:clickable="true"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/guide_zhuche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/view_centre"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/register_btn"
+            android:clickable="true"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout   
+        android:id="@+id/ll"   
+        android:orientation="horizontal"   
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content"   
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"   
+        android:layout_centerHorizontal="true">  
+          
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center_vertical"  
+            android:clickable="true"  
+            android:padding="5dp"  
+            android:src="@drawable/guide_page_dot" />  
+  
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center_vertical"  
+            android:clickable="true"  
+            android:padding="5dp"  
+            android:src="@drawable/guide_page_dot" />  
+  
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center_vertical"  
+            android:clickable="true"  
+            android:padding="5dp"  
+            android:src="@drawable/guide_page_dot" />  
+            
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center_vertical"  
+            android:clickable="true"  
+            android:padding="5dp"  
+            android:src="@drawable/guide_page_dot" />  
+  
+    </LinearLayout> 
+
+</RelativeLayout>

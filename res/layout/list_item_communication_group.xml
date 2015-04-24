@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_default"
+    android:paddingBottom="8dp" >
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f9fa"
+        android:paddingBottom="6dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="6dp"
+        android:text="群组类型"
+        android:textColor="#818181"
+        android:visibility="gone" />
+
+    <net.ememed.doctor2.widget.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_portrait"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/tv_type"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/avatar_large"
+        app:border_color="@color/gray"
+        app:border_width="1dp" />
+
+    <ImageView
+        android:id="@+id/iv_tips_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/iv_portrait"
+        android:layout_alignTop="@id/iv_portrait"
+        android:src="@drawable/contact_red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_portrait"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/iv_portrait"
+        android:text="群名称"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:singleLine="true"
+        android:textColor="#808080" />
+
+</RelativeLayout>

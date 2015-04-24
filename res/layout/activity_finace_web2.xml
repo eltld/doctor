@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/reseda"
+        android:orientation="vertical" >
+
+        <include layout="@layout/top_bar_doctor_green" />
+
+        <ProgressBar
+            android:id="@+id/webview_progress_normal"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentTop="true"
+            android:max="100" />
+
+        <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ptr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <WebView
+                android:id="@+id/wv_oauth_normal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                ptr:ptrViewDelegateClass="uk.co.senab.actionbarpulltorefresh.library.viewdelegates.WebViewDelegate" />
+
+            <include
+                layout="@layout/u_empty_view"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/u_net_unavailable"
+                android:visibility="gone" />
+        </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+    </LinearLayout>
+
+</RelativeLayout>

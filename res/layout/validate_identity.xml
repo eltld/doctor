@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:layout_margin="5dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/seek_step1_pro"
+            android:text="@string/seek_phone_verify" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/seek_step2_nor"
+            android:gravity="center"
+            android:text="@string/seek_rest_pwd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+           	android:gravity="center"
+            android:drawableLeft="@drawable/seek_step3_pro"
+            android:text="@string/seek_success" />
+    </LinearLayout>
+
+    <!--
+    <RadioGroup
+        android:id="@+id/rg_valia_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:checkedButton="@+id/rb_telphone_vali"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_telphone_vali"
+            style="@style/rdobutton_bottom_style"
+            android:background="@drawable/phone_validate_bg" />
+
+        <RadioButton
+            android:id="@+id/rb_email_vali"
+            style="@style/rdobutton_bottom_style"
+            android:background="@drawable/email_validate_bg" />
+    </RadioGroup>
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seek_step1_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        style="@style/u_edit_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_phone_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:hint="11位手机号码"
+            android:singleLine="true"
+            android:numeric="integer"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/u_edit_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码："
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_valicode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:numeric="integer"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_get_valicode"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_register"
+            android:onClick="doClick"
+            android:text="获取验证码"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt_login"
+        android:onClick="doClick"
+        android:text="下一步"
+        android:textColor="@color/white" />
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_vali_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_phone_or_email_num"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_get_valicode"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:onClick="doClick"
+        android:text="获取验证码"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验  证  码"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_valicode"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/shape_bg_listview"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next2"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:onClick="doClick"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="10dp" /> -->
+
+</LinearLayout>

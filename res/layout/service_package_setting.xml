@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <net.ememed.doctor2.widget.InScrollGridView
+                    android:id="@+id/gv_space"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DCDCDC"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp" >
+                </net.ememed.doctor2.widget.InScrollGridView>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.9dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/bg_gray_alipay" />
+
+                <LinearLayout
+                    android:id="@+id/ll_more_service_package_cycle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_default"
+                    android:gravity="center_vertical"
+                    android:onClick="doClick"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_add_service_package_cycle"
+                        android:text="添加更多周期"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.9dp"
+                    android:background="@color/bg_gray_alipay" />
+
+                <LinearLayout
+                    android:id="@+id/ll_more_package_cycle_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="★如何开放“私人医生服务”？1.勾选至少2个单项 2.设定周期价格 3.点击保存"
+                    android:textColor="@color/light_gray"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </ScrollView>
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+
+</LinearLayout>

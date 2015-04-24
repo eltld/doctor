@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fl_top_title"
+    android:background="@color/topbg_green"
+    android:minHeight="48dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_go_home"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="53dp"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:onClick="doClick"
+        android:src="@drawable/top_back" />
+    
+    <!-- <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="回首页"
+        /> -->
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/ll_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:id="@+id/top_title"
+        style="@style/text" 
+        android:text="个人百科"/>
+    
+    <ImageView
+        android:id="@+id/iv_down_arrow"
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/baike_home_arrow"
+        />
+    
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_addhealth"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/u_button_bg"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:onClick="doClick"
+        android:text="菜单"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tv_menu"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_gravity="center_vertical|right"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:text="创建说说"
+        android:textColor="@color/white"
+        />
+</FrameLayout>

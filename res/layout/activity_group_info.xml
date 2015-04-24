@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/top_bar_doctor_green" /> -->
+
+    <net.ememed.doctor2.widget.TitleLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="14dp" >
+
+                <net.ememed.doctor2.widget.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/civ_photo"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/default_avatar"
+                    app:border_color="@color/white"
+                    app:border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/tv_group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/civ_photo"
+                    android:text="群名称"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_group_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_group_name"
+                    android:layout_below="@id/tv_group_name"
+                    android:layout_marginBottom="22dp"
+                    android:text="群号："
+                    android:textColor="@color/grayness"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/tv_group_name"
+                    android:layout_below="@id/tv_group_num"
+                    android:background="@color/grayness" />
+
+                <TextView
+                    android:id="@+id/tv_group_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_group_name"
+                    android:layout_below="@id/line1"
+                    android:layout_marginTop="12dp"
+                    android:singleLine="true"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="16dp"
+                android:paddingTop="14dp" >
+
+                <TextView
+                    android:id="@+id/tv_label_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="创建人"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <net.ememed.doctor2.widget.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/civ_owner_photo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/tv_label_owner"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/default_avatar"
+                    app:border_color="@color/white"
+                    app:border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/tv_owner_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/civ_owner_photo"
+                    android:layout_toRightOf="@id/civ_owner_photo"
+                    android:text="   " />
+
+                <TextView
+                    android:id="@+id/tv_owner_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_owner_name"
+                    android:layout_below="@id/tv_owner_name"
+                    android:textColor="@color/grayness" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grayness" />
+
+            <RelativeLayout
+                android:id="@+id/layout_group_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="16dp"
+                android:paddingTop="14dp" >
+
+                <TextView
+                    android:id="@+id/tv_label_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="群聊大小"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_group_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="  "
+                    android:textColor="@color/grayness"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_group_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="16dp"
+                android:paddingTop="14dp" >
+
+                <TextView
+                    android:id="@+id/tv_label_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="群成员"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_group_person_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/grayness" />
+
+                <net.ememed.doctor2.widget.MyGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_label_person"
+                    android:columnWidth="48dp"
+                    android:listSelector="@android:color/transparent"
+                    android:minHeight="48dp"
+                    android:numColumns="5"
+                    android:verticalSpacing="8dp" >
+                </net.ememed.doctor2.widget.MyGridView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_group_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="16dp"
+                android:paddingTop="14dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="群描述"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_group_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grayness" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/group_detail_button_apply"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

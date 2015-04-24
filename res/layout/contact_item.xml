@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/list_item_default">
+
+    <RelativeLayout
+        android:id="@+id/contact_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp">
+
+        <net.ememed.doctor2.widget.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image_person"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar_medium"
+            android:layout_centerVertical="true"
+            app:border_color="@color/gray"
+            app:border_width="2dp" />
+        <TextView 
+            android:id="@+id/unreadLabel"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/lable_bg"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="40dp"/>
+        <ImageView
+            android:id="@+id/iv_fans"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/lab_fans"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/contact_image"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="李莉莉"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_consult_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:text="多喝点水就哈哈哈哈"
+            android:textColor="@color/light_gray" />
+    </LinearLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1.5dp"
+	    android:background="#dfdfdf"
+	    android:layout_below="@id/contact_image"
+	    />
+</RelativeLayout>

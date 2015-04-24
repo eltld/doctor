@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="service_cycle">
+        <item>1个月</item>
+        <item>3个月</item>
+        <item>半年</item>
+        <item>1年</item>
+    </string-array>
+    
+    <integer-array name="service_cycle_int">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>1</item>
+    </integer-array>
+    
+    <string-array name="weeks">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="en_weeks">
+        <item>monday</item>
+        <item>tuesday</item>
+        <item>wednesday</item>
+        <item>thursday</item>
+        <item>friday</item>
+        <item>saturday</item>
+        <item>sunday</item>
+    </string-array>
+    <string-array name="sex">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+    <string-array name="rh">
+        <item>-</item>
+        <item>是</item>
+        <item>否</item>
+        <item>不详</item>
+    </string-array>
+    
+     <string-array name="baike_tip">
+        <item>如果您发表的内容文字较多（比如：文章、手术分享等），您可先将内容用WORD文档整理好，通过邮件形式发送至薏米助理邮箱</item>
+        <item>ememed_public@ememed.net</item>
+        <item>，薏米助理可帮您在后台发布。如需帮助，请致电薏米助理热线：</item>
+        <item>4009003333</item>
+    </string-array>
+   
+</resources>

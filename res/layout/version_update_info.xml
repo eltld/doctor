@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="50dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_version_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="薏米医生(ANDROID) 1.3.2" />
+
+    <TextView
+        android:id="@+id/tv_update_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="更新时间" />
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="文件大小:6389kb" />
+  <TextView
+      	android:id="@+id/tv_upgrade_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="版本更新内容：" />
+    <TextView
+        android:id="@+id/tv_new_feature"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

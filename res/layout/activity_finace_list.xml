@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reseda" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/topbg_green"
+            android:minHeight="48dp" >
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:onClick="doClick"
+                android:src="@drawable/top_back" />
+        -
+
+            <LinearLayout
+                android:id="@+id/tv_fiance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_fiance_up"
+                    style="@style/text"
+                    android:onClick="doClick" />
+
+                <ImageView
+                    android:id="@+id/iv_fiance_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_addhealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/finace_more_pic"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:onClick="doClick"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <!-- <include layout="@layout/top_bar_doctor_green" />
+
+        <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ptr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" > -->
+
+            <include
+                android:id="@+id/ptr_listview"
+                layout="@layout/listview" />
+
+            <include
+                layout="@layout/u_empty_view"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/u_net_unavailable"
+                android:visibility="gone" />
+      <!-- </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout> -->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:visibility="gone" />
+
+</RelativeLayout>

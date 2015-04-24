@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<include layout = "@layout/top_bar_baike" />"
+    
+	<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 个人百科 -->
+        <FrameLayout
+            android:id="@+id/fl_baike_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/ll_content_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!-- <include layout="@layout/top_bar_doctor_green" /> -->
+                <!--
+                <net.ememed.doctor2.widget.TitleLayout 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               ></net.ememed.doctor2.widget.TitleLayout>
+                -->
+
+                <net.ememed.doctor2.widget.RefreshListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom" >
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="25dp"
+                    android:clickable="true"
+                    android:onClick="doClick"
+                    android:src="@drawable/pic_share_big" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_black_guider"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_guider2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="9dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/baike_guider_2"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_guider1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="220dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/baike_guider_1"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_baike_random"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <net.ememed.doctor2.widget.RefreshListView
+                android:id="@+id/listView_random"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/ll_baike_attention"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <net.ememed.doctor2.widget.RefreshListView
+                android:id="@+id/listView_attention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_top_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/topbg_green"
+    android:minHeight="48dp" >
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="53dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="doClick"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/top_back" />
+
+    <TextView
+        android:id="@+id/top_title"
+        style="@style/text" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp" >
+
+        <Button
+            android:id="@+id/btn_addhealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/u_button_bg"
+             android:layout_alignParentRight="true"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:onClick="doClick"
+            android:text="菜单"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/iv_red_dot"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/contact_red"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_menu"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:clickable="true"
+        android:gravity="right"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:onClick="doClick"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="菜单"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_right_fun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/ic_share"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_right_fun_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:minHeight="35dp"
+        android:minWidth="40dp"
+        android:onClick="doClick"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:src="@drawable/chat_detailed"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_right_fun_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:minHeight="35dp"
+        android:minWidth="40dp"
+        android:onClick="doClick"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:paddingTop="14dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_right_fun_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_baike_plus" />
+
+        <TextView
+            android:id="@+id/tv_right_fun_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/loading_progress"
+        style="@style/GNowProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:indeterminate="true"
+        android:minHeight="4dp"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/pic_smile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/logon_success"
+                    android:textColor="#ff7137"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verify_success"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/pic_warn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logon_success_3"
+                    android:textColor="@color/topbg_green"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:text="@string/verify_success_tip" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#4c000000"
+            ></LinearLayout>
+    </FrameLayout>
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="vertical"
+	    >
+        
+	    <LinearLayout 
+	        android:id="@+id/linear_layout2"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:background="#4c000000"
+	        android:orientation="vertical"
+	        ></LinearLayout>
+	    
+	    <FrameLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        >
+	    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal" >
+            
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+            <Button
+                android:id="@+id/btn_invite_patient_3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/button_bg_selector"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:onClick="doClick"
+                android:text="@string/verify_invite_patient"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+			</LinearLayout>
+			
+		
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+            <Button
+                android:id="@+id/btn_info_preview_3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_green_selector"
+                android:onClick="doClick"
+                android:singleLine="true"
+                android:text="@string/infomation_preview"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:background="@drawable/res_tip"
+            android:clickable="true"
+            android:onClick="doClick"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        </FrameLayout>
+        
+	    <LinearLayout
+	        android:id="@+id/linear_layout3"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#4c000000"
+	        android:orientation="vertical"
+	        ></LinearLayout>
+	</LinearLayout>
+</LinearLayout>

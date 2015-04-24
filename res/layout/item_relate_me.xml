@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+        
+        <net.ememed.doctor2.widget.CircleImageView 
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/civ_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar_large"
+            app:border_color="@color/gray"
+            app:border_width="2dp"
+            />
+        
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/topbg_green"
+            android:text="王老五"
+            />
+        <TextView
+            android:id="@+id/tv_time" 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:textColor="@color/grayness"
+            android:text="2014-12-12"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_share_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享至"
+            android:textColor="@color/grayness"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:text="QQ空间"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/pic_delete" />
+        
+        <ImageView 
+            android:id="@+id/iv_comment"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:clickable="true"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/discuss_ioc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quote_box_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_refer_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_refer_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\@李四:"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_refer_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="伤不起啊伤不起"
+                android:textColor="@color/grayness"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="说说标题"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_shuoshuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="中国沈阳飞机制造公司的FC-31外贸型战斗机虽然引起了世界的关注，但是似乎至今尚未有国外客户表示明确的兴趣。昨天，英国媒体报道称，土耳其在推进本国五代机项目时计划引进国外公司的帮助，目前沈飞对参与这一项目想去浓厚。报道称，沈飞可能在今年3月20日前就土"
+            android:textColor="@color/grayness"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+   
+
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+<!--  
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/add_bank_card_top"
+                android:textColor="@color/grayness" />-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+                 <LinearLayout
+                    android:id="@+id/ll_hodler"
+                    style="@style/style_main_item_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/public_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/card_name" />
+
+                    <EditText
+                        android:id="@+id/et_hodler"
+                        style="@style/u_edit_bg"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:background="@null"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+
+                
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_card_number"
+                    style="@style/style_main_item_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/public_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/dentity_card" />
+
+                    <EditText
+                        android:id="@+id/et_card_number"
+                        style="@style/u_edit_bg"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:background="@null"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+                 <LinearLayout
+                    android:id="@+id/ll_bank_name"
+                    style="@style/style_main_item_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="doClick" >
+
+                    <TextView
+                        style="@style/public_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/open_account_bank" />
+
+                    <TextView
+                        android:id="@+id/et_bank_name"
+                        style="@style/u_edit_bg"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:background="@null"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/pic_down" />
+                </LinearLayout>
+                
+                 <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+                <LinearLayout
+                    android:id="@+id/ll_bank_number"
+                    style="@style/style_main_item_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="doClick" >
+
+                    <TextView
+                        style="@style/public_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/card_number" />
+
+                    <EditText
+                        android:id="@+id/et_bank_number"
+                        style="@style/u_edit_bg"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="19"
+                        android:hint="请输入银行卡账号"
+                        android:inputType="number" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/pic_bank_card" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+                
+<!--  
+                <LinearLayout
+                    android:id="@+id/ll_bank_name"
+                    style="@style/style_main_item_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="doClick" />
+
+                    <TextView
+                        style="@style/public_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/open_account_bank" />
+
+                    <TextView
+                        android:id="@+id/et_bank_name"
+                        style="@style/u_edit_bg"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/pic_down" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />-->
+
+                <LinearLayout
+                    android:id="@+id/ll_bank_branch"
+                    style="@style/style_main_item_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/public_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/open_account_address" />
+
+                    <EditText
+                        android:id="@+id/et_bank_branch"
+                        style="@style/u_edit_bg"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:hint="请输入开户行信息"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="银行卡信息务必填写本人真实开户信息，以免影响结算给您造成不必要损失"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+        </LinearLayout>
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+
+</LinearLayout>

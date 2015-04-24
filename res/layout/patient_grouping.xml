@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+    <include layout="@layout/top_bar_doctor_green" />
+    
+	<ExpandableListView 
+	    android:id="@+id/patient_grouping_list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="gone"
+	    ></ExpandableListView>
+	
+        
+	<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+        android:id="@+id/ptr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textColor="@color/huise"
+            android:textSize="18sp"
+            android:visibility="gone" />
+		<net.ememed.doctor2.widget.RefreshExpandableListView 
+		    android:id="@+id/patient_grouping_all_list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:groupIndicator="@null"
+		    android:childDivider="#f3f3f3"
+	    	></net.ememed.doctor2.widget.RefreshExpandableListView>
+        <include
+            android:id="@+id/rl_error_item"
+            layout="@layout/chat_neterror_item"
+            android:visibility="gone" />
+        
+        <include
+            layout="@layout/u_empty_view"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/u_net_unavailable"
+            android:visibility="gone" />
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+</LinearLayout>

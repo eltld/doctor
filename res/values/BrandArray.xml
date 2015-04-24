@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="certificate_type">
+         <!-- 此处数组不可调换顺序，若调换，需修改RegistSuccessActivity里面关于证书类型下拉框的数据 -->
+        <item>请选择</item>
+        <item>医师执业证书</item>
+        <item>医师资格证</item>
+        <item>工作证</item>
+    </string-array>
+    
+    <string-array name="sex1">
+        <item>请选择</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    
+    <string-array name="brands">
+        <item>请选择</item>
+        <item>主任医师</item>
+        <item>副主任医师</item>
+        <item>主治医师</item>
+    </string-array>
+    
+    <string-array name="prof_attributes">
+        <item>全科</item>
+        <item>专科</item>
+    </string-array>
+    
+       <string-array name="pwd_type">
+        <item>修改登录密码</item>
+        <item>修改语音密码</item>
+    </string-array>
+    
+    <string-array name="eval_type">
+        <item>全部</item>
+        <item>好评</item>
+        <item>中评</item>
+        <item>差评</item>
+    </string-array>   
+    
+     <string-array name="consult_info">
+        <item>热点</item>
+        <item>健康</item>
+        <item>情感</item>
+        <item>减肥</item>
+        <item>两性</item>
+    </string-array> 
+</resources>

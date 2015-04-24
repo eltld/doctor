@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+     >
+<!--     android:background="@drawable/bg_order_item" -->
+     
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/head_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout 
+                android:id="@+id/ll_service_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingRight="3dp"
+                >
+            <ImageView
+                android:id="@+id/iv_service_icon"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:src="@drawable/icon_custom" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/iv_red_dot"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignRight="@+id/ll_service_icon"
+                android:background="@drawable/contact_red"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/top_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/head_layout"
+            android:layout_toRightOf="@+id/head_layout"
+             >
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_consult_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/light_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/head_layout"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/top_item1">
+
+            <TextView
+                android:id="@+id/tv_consult_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="#af2836"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/chat_cut_line" />
+
+    <TextView
+        android:id="@+id/information_tx"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:minHeight="20dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="12dp" 
+        android:layout_marginRight="10dp"
+        android:maxLines="2"
+         android:ellipsize="end"
+        />
+
+</LinearLayout>

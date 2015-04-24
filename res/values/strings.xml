@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="system_title">系统提示</string>
+    <string name="data_none">暂无数据</string>
+    <string name="app_name">薏米网</string>
+    <string name="bt_save">保存</string>
+    <string name="bt_ok">确定</string>
+    <string name="bt_cancel">取消</string>
+    <string name="bt_warn">警告</string>
+    <string name="net_error">网络异常</string>
+    <string name="no_data">暂无信息</string>
+    <string name="no_evaluation">暂无评价</string>
+    <string name="action_settings">Settings</string>
+    <string name="confirm_ok">确定</string>
+    <string name="confirm_cancel">取消</string>
+    <string name="confirm_yes">是</string>
+    <string name="confirm_no">否</string>
+    <string name="logout_home">确定要退出吗？</string>
+    <string name="public_back">返回</string>
+    <string name="public_save">保存</string>
+    <string name="public_all">全部</string>
+    <string name="add_health_record_notice">提示</string>
+    <string name="add_health_record_know">我知道了</string>
+    <string name="u_share_title">薏米网APP</string>
+    <string name="u_share_content">中国医生自由执业首选APP——薏米网手机客户端，下载地址：http://app.ememed.net/doctor.html</string>
+    <string name="send_to">给更多人知道</string>
+    <string name="progressdialog_loading">努力加载中...</string>
+    <string name="progressdialog_sending">发送中...</string>
+    <string name="progressdialog_sending_file">附件上传中...</string>
+    <string name="progressdialog_sending_avatar">头像上传中...</string>
+    <string name="apply_hosp_xiangce">从相册中选择</string>
+    <string name="apply_hosp_photo">拍照</string>
+    <string name="choose_photo_title">选择要上传的照片</string>
+    <string name="doctor_type_quanke">全科医生</string>
+    <string name="doctor_type_zhuanke">专科医生</string>
+    <string name="text_get_data_failed">数据加载失败</string>
+    <string name="text_get_data_none">暂无数据</string>
+    <string name="text_check_net_setting">载入失败,点击尝试重新加载</string>
+    <!-- Home Content -->
+    <string name="notice_title_take_cash">提现成功</string>
+    <string name="notice_title_textconsult">图文咨询</string>
+    <string name="notice_title_sign">签约服务</string>
+    <string name="notice_title_tijian">体检报告解读</string>
+    <string name="notice_title_phoneconsult">预约通话</string>
+    <string name="notice_title_private_doctor">私人医生服务</string>
+    <string name="notice_demo_take_cash">您的体现申请已完成, 点击查看详细</string>
+    <string name="notice_demo_textconsult">用户益力多向你发起咨询请求</string>
+    <string name="notice_demo_sign">用户黄小明等2人向你发起签约服务</string>
+    <string name="notice_demo_tijian">用户白玉堂等3人请求你解读报告</string>
+    <string name="service_price">请输入价格(最多输入两位小数)</string>
+
+    <!-- Mine Content -->
+    <string name="person_info">个人资料</string>
+    <string name="user_service_set">服务设置</string>
+    <string name="message_center">消息中心</string>
+    <string name="finance_details">财务详情</string>
+    <string name="finance_income_title">收入</string>
+    <string name="service_evaluate">服务评价</string>
+    <string name="apply_set">应用设置</string>
+    <string name="about_us">关于我们</string>
+    <string name="invate_hint">有奖邀请</string>
+    <string name="asterisk_prompt">认证信息.带*为认证必备资料！</string>
+    <string name="setting_app_account_safe_prompt">帐号安全</string>
+    <string name="setting_app_account_push_notice_prompt">消息推送</string>
+    <string name="app_version">v</string>
+    <string name="lt_function_intro">服务介绍</string>
+    <string name="lt_encourage">打分鼓励</string>
+    <string name="lt_share">我要分享</string>
+    <string name="lt_respon">免责声明</string>
+    <string name="lt_problem">常见问题</string>
+    <!-- activity title -->
+    <string name="act_title_home">薏米医生</string>
+    <string name="act_title_service">服务</string>
+    <string name="act_title_contact">联系人</string>
+    <string name="act_title_patient">患者</string>
+    <string name="act_title_doctor_friend">医生好友</string>
+    <string name="act_title_stting_app">应用设置</string>
+    <string name="act_title_stting_pwd">密码修改</string>
+    <string name="activity_title_service_set">服务设置</string>
+    <string name="activity_title_service_packet_setting">设置私人套餐</string>
+    <string name="activity_title_service_set_textconsult">图文咨询</string>
+    <string name="act_title_evaluation">服务评价</string>
+    <string name="act_title_choose_room">选择科室</string>
+    <string name="act_order_title">订单详情</string>
+    <!-- tab str -->
+    <string name="tab_bottom_home">首页</string>
+    <string name="tab_bottom_contact">患者</string>
+    <string name="tab_bottom_friend">医生好友</string>
+    <string name="tab_bottom_me">我</string>
+    <string name="tab_bottom_service">服务</string>
+    <string name="tab_top_home">薏米网</string>
+    <string name="frag_title_chat">对话</string>
+    <string name="frag_title_order">订单</string>
+    <string name="frag_title_info">用户资料</string>
+    <!-- fragment_service_layout -->
+    <string name="consult_service">资讯</string>
+    <string name="medical_assistant_service">用药助手</string>
+    <string name="call_service">薏米助理（电话）</string>
+    <string name="text_service">薏米助理（文字）</string>
+    <string name="title_login">登录账号</string>
+    <string name="contact_ememed">薏米资讯</string>
+
+    <!-- 私人医生设置 -->
+    <string name="service_opening">开放给用户购买</string>
+    <string name="service_setting_two">请至少勾选两项服务</string>
+    <string name="service_setting_period">请选择服务周期</string>
+    <string name="service_setting_packet_price">请填写套餐价格</string>
+    <string name="service_setting_is_open">已开放</string>
+    <string name="service_setting_is_closed">未开放</string>
+    <string name="service_setting_time_not_null_start">请设置服务的开始时间</string>
+    <string name="service_setting_time_not_null_end">请设置服务的结束时间</string>
+    <string name="service_setting_time_not_null_date">请选择一周中的某天或多天</string>
+    <string name="service_setting_price_illegal">请输入正确的金额</string>
+    <string name="service_setting_jiahao_num_illegal">请输入正确的加号名额</string>
+    <string name="service_setting_time">请设置时间</string>
+    <string name="service_setting_time_success">设置成功</string>
+    <string name="service_setting_price">价格设置为空时，您将不能开启此项服务；如果您之前开启过该服务，价格设置为空时系统将为您自动关闭该项服务</string>
+    <string name="service_setting_no_price">价格不能为空</string>
+    <string name="service_setting_shangmen">请填写上门地址</string>
+    <string name="service_setting_jiahao_hospital">请输入医院名称</string>
+    <string name="service_setting_jiahao_num">请输入加号名额</string>
+    <string name="system_info">系统提示</string>
+    <string name="bt_common_problem">常见问题</string>
+    <string name="my_doctor_packet_un_setting_tips">该项未完成设置,是否现在设置?</string>
+    <string name="service_setting_guide">温馨提示：\n\n\n1. 建议勾上全部服务， 将能为您的用户带来更多的服务， 并获得丰厚收入。\n\n2. 建立多种的服务周期给用户更多选择，获得更多销售机会。</string>
+    <string name="my_doctor_packet_not_setting_textconsult">根据您的医生身份属性，系统已帮您完成设置！</string>
+    <string name="service_setting_price_v2">设置价格</string>
+    <string name="service_setting_zhuyuan">预约住院</string>
+    <string name="service_setting_jiahao">预约加号</string>
+    <string name="service_setting_end">私人医生服务期间，您和用户之间可以进行无限制沟通，同时用户可申请每周一次的预约通话服务。</string>
+
+    <!-- PwdSettingFragment -->
+    <string name="old_pwd">原密码：</string>
+    <string name="old_pwd_contant">请输入旧密码</string>
+    <string name="new_pwd">新密码：</string>
+    <string name="new_pwd_contant">请输入新密码</string>
+    <string name="confirm_pwd">确认密码:</string>
+
+    <!-- 注册 -->
+    <string name="upload_dismiss">取消上传</string>
+    <string name="upload_confirm">确定上传图片？</string>
+    <string name="bt_upload_work_address">提交执业地点</string>
+    <string name="bt_upload_success">确 认</string>
+    <string name="public_feedback">意见反馈</string>
+    <string name="txt_feedback_hint">请提出您的宝贵意见或建议，薏米网的成长离不开您的支持，我们将为提出有效建议的您给予礼物奖励，请留下有效的联系方式！</string>
+    <string name="txt_feedback_title">QQ\\邮箱\\电话</string>
+    <string name="register_protocol"><u>&lt;薏米医生服务协议&gt;</u></string>
+    <string name="register_info_later">稍候提供资料>></string>
+    <string name="register_info_camera">请对以下证件进行拍照,以帮助我们验证您的医生身份。</string>
+    <string name="register_info_almost_success">验证身份以激活全部服务</string>
+    <string name="register_uploading_file">正在提交照片,请稍候</string>
+    <string name="register_upload_failed">网络不佳,提交失败</string>
+    <string name="register_success_assisant">薏米助理会在2个工作日内为您核实身份,并给予您通知.</string>
+    <string name="register_success_not_set_work_address">请填写您的&lt;&lt;医师执业证书&gt;&gt;的详细执业地点</string>
+    <string name="register_toast_set_work_address">请填写执业地点</string>
+    <string name="register_uploading_again">再次提交</string>
+    <string name="register_camera_file">对 医师执业证书 拍照</string>
+    <string name="register_camera_idcard">对 居民身份证 拍照</string>
+    <string name="register_camera_breast_plate">对 胸牌 拍照</string>
+    <string name="register_camera_work_permit">对 工作证 拍照</string>
+    <string name="register_upload_work_address">验证信息已提交成功</string>
+    <string name="register_camera_tips_1">1. 请确保是您本人的证书。</string>
+    <string name="register_camera_tips_2">2. 打开含有证书编号的页面(如图)</string>
+    <string name="register_camera_tips_3">3. 请确认拍照文字清晰可读。</string>
+    <string name="register_camera_tips_idcard_1">1. 请确保身份证为您本人。</string>
+    <string name="register_camera_tips_idcard_2">2. 选择身份证正面进行拍照。</string>
+    <string name="register_camera_tips_idcard_3">3. 拍照请保证数字能清晰可读。</string>
+    <string name="register_pic_upload_tip">*如您无法上传头像或证件照，您可将图片通过QQ发给小薏帮您处理（小薏QQ号：3090823200）</string>
+
+    <!-- 对胸牌拍照的提示 -->
+    <string name="register_camera_tips_breast_plate_1">1. 请确保胸牌为您本人。</string>
+    <string name="register_camera_tips_breast_plate_2">2. 选择胸牌正面进行拍照。</string>
+    <string name="register_camera_tips_breast_plate_3">3. 请确认拍照文字清晰可读。</string>
+
+    <!-- 对工作证拍照的提示 -->
+    <string name="register_camera_tips_work_permit_1">1. 请确保工作证为您本人。</string>
+    <string name="register_camera_tips_work_permit_2">2. 选择工作证正面进行拍照。</string>
+    <string name="register_camera_tips_work_permit_3">3. 请确认拍照文字清晰可读。</string>
+    <string name="register_bt_camera_cernum">医师执业证书</string>
+    <string name="register_bt_camera_idcard">中国居民身份证</string>
+    <string name="register_account_length">手机号码长度错误</string>
+    <string name="register_account_length_null">请填写手机号码</string>
+    <string name="register_verify_status_running">身份验证中,完善资料能更快通过审核</string>
+    <string name="register_verify_status_not_upload_file">验证您的"医生身份"以激活帐号</string>
+    <string name="register_verify_status_failed">身份验证失败,点击查看</string>
+    <string name="register_verify_status_success">身份已经验证，请设置服务内容</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="bankcard_manage">银行卡管理</string>
+    <string name="bank_confirm">确定执行提现操作？</string>
+    <string name="register_title">薏米网，实现全科医生和专科医生相互分诊、转诊及交流的移动医疗平台</string>
+    <string name="register_quanke">薏米全科医生：\n①免费使用“薏米社区病人病历管理云系统”以及“薏米社区医生APP”，轻松方便为广大居民提供基础医疗服务。\n②通过薏米网及时方便向专科医生转诊病人，提升服务价值。</string>
+    <string name="register_zhuanke">薏米专科医生：\n①打造医生工作室，提升个人品牌\n②享受法律顾问、统计学咨询、用药助手等各项专业服务，为行医之路保驾护航。\n③提供个性化医疗服务，获得市场化报酬。</string>
+    <string name="register_hint">温馨提示：</string>
+    <string name="register_hint_content">为了让病患更方便地找到您，建议在二甲以下医院执业的专科医生选择注册全科医生。</string>
+    <string name="title_register">注册账号</string>
+    <string name="title_add_infomation">完善资料</string>
+    <string name="title_register_verify">验证医生身份</string>
+
+    <!-- 个人资料 -->
+    <string name="add_userseek_girl">女</string>
+    <string name="add_userseek_boy">男</string>
+    <string name="getuser_setsex">设置性别</string>
+    <string name="getuser_set_attri">设置专业属性</string>
+    <string name="getuser_set_position">设置职称</string>
+    <string name="apply_hosp_choose">选择方式</string>
+    <string name="set_email_address">Email</string>
+    <string name="set_touxiang">头像</string>
+    <string name="set_name">姓名</string>
+    <string name="set_sex">性别</string>
+    <string name="set_certificate">证件类型</string>
+    <string name="set_call">联系电话</string>
+    <string name="set_realcert_number">医师执业证书 编码</string>
+    <string name="set_cert_positive">医师执业证 照片页</string>
+    <string name="set_cert_opposite">医师执业证 姓名页</string>
+    <string name="set_licence_positive">医师资格证 照片页</string>
+    <string name="set_licence_opposite">医师资格证 姓名页</string>
+    <string name="set_breast_plate">胸牌</string>
+    <string name="set_work_permit">工作证</string>
+    <string name="set_position">职称</string>
+    <string name="set_hospital">就职医院</string>
+    <string name="set_hospital_laboratory">就职科室</string>
+    <string name="set_laboratory_phone">就职科室电话</string>
+    <string name="set_prof_attributes">专业属性</string>
+    <string name="set_realskilled">擅长</string>
+    <string name="set_detail_info">个人详情</string>
+    <string name="register_success_title"><b>恭喜!帐号建立</b>\n离成功只需一步</string>
+    <string name="bt_submit_to_ememed">提交审核</string>
+    <string name="set_id_number">身份证号</string>
+    <string name="set_id_num_title">设置身份证</string>
+
+    <!-- 找回密码 -->
+    <string name="seek_phone_verify">验证手机</string>
+    <string name="seek_rest_pwd">重置密码</string>
+    <string name="seek_success">完成</string>
+    <string name="activity_title_find_pw">找回密码</string>
+    <string name="seek_step1_title">请填写注册时使用的手机号码</string>
+    <string name="seek_step2_title">设置新密码</string>
+    <string name="seek_step3_title">密码已重置成功</string>
+    <string name="seek_step3_btn">立即登录</string>
+    <string name="need_upload_avatar">请提交头像</string>
+    <string name="need_upload_pos">请提交执业证正面</string>
+    <string name="need_upload_oppo">请提交执业证反面</string>
+    <string name="need_select_sex">请选择性别</string>
+    <string name="need_select_position">请选择您的职称</string>
+    <string name="need_select_hospital">请填写您的就职医院</string>
+    <string name="need_select_lab">请选择科室</string>
+    <string name="need_select_skill">输入专业专长,提高个人品牌形象！</string>
+    <string name="need_select_all">带*号的资料未填写完毕，请填写完毕再提交</string>
+    <string name="upload_register_info">提交资料</string>
+    <string name="upload_register_info_again">重新提交资料</string>
+    <string name="main_doing">正在下载中  </string>
+    <string name="main_next">下次再说  </string>
+    <string name="main_shenji">立即升级  </string>
+    <string name="main_notice">升级提示  </string>
+    <string name="main_size">文件大小:  </string>
+    <string name="main_time">更新时间:</string>
+    <string name="main_ememed">薏米医生(ANDROID)  </string>
+
+    <!-- 财务详情 -->
+    <!--
+    <string name="bank_card">提现银行卡</string>
+    <string name="add_bank_card">添加</string>
+    <string name="income_expend">收入/支出</string>
+    <string name="doctor_income">收入</string>
+    <string name="doctor_expend">支出</string>
+    <string name="doctor_freeze">冻结/解冻</string>
+    <string name="how_tixian">如何提現</string>
+    <string name="step_one">步骤一</string>
+    <string name="step_one_contant">点击页面下方“添加”，进入银行卡添加页面</string>
+    <string name="step_two">步骤二</string>
+    <string name="step_two_contant">按照系统提示，填写一张属于您的个人银行卡资料信息</string>
+    <string name="step_three">步骤三</string>
+    <string name="step_three_contant">针对当月可用余额满100元人民币的用户，薏米工作人员将会在下一个月的前10个工作日内将款项划拨到您所填写的银行卡内，关于手续费及更多提现信息，请见以下说明：</string>
+    <string name="add_bank_card_title">添加银行卡</string>
+    <string name="add_bank_card_top">目前暂支持以下银行开通提现申请，请谅解！</string>
+    <string name="about_money">关于提现</string>
+    <string name="card_number">卡号</string>
+    <string name="open_account_bank">开户银行</string>
+    <string name="open_account_address">开户支行</string>
+    -->
+    <!-- 即时聊天 -->
+    <string name="text_ack_msg">已读</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_smile">表情</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    <string name="user_card">名片</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="send_fail">发送消息失败,</string>
+    <string name="delete_message">删除消息</string>
+    <string name="copy_message">复制消息</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="delete">删除</string>
+    <string name="resend">重发</string>
+    <string name="confirm_resend">确认重发该信息？</string>
+    <string name="connect_failuer_toast">连接不到服务器，请稍后重试</string>
+    <string name="network_unavailable">网络连接不可用，请检查网络</string>
+    <string name="copy">复制</string>
+    <string name="forward">转发</string>
+    <string name="button_logout">退出登录</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="clear_records">清空记录</string>
+    <string name="clear_all_records">是否清空所有聊天记录？</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="voice">[语音]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_save">保存</string>
+    <string name="button_search">查找</string>
+    <string name="button_add">添加</string>
+    <string name="search_header">S</string>
+    <string name="network_isnot_available">网络不可用</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="select_contacts">选择联系人</string>
+    <string name="confirm_forward_to">确定转发到：%1$s ?</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_hint">退出后不会删除任何历史数据，下次登录依然可以使用本账号</string>
+    <string name="exit_group_hint">退出后，将不再接收此群聊信息</string>
+    <string name="dissolution_group_hint">退出后，此群将被解散</string>
+    <string name="exit_group">退出</string>
+    <string name="connect_conflict">同一帐号已在其他设备登录</string>
+
+    <!-- 联系人 -->
+    <string name="tv_include_service">所含各项目：</string>
+    <string name="contact_failure">拒绝理由：尊敬的会员，由于我在您指定额预约时间没空（开会或出差），暂时不能提供服务，造成您的不便，敬请谅解！</string>
+    <string name="contact_shangmen">上门会诊</string>
+    <string name="contact_jiahao">名医加号</string>
+    <string name="contact_zhuyuan">住院直通车</string>
+    <string name="contact_time">周期时间:</string>
+    <string name="contact_yuyue_time">预约时间:</string>
+    <string name="contact_yuyue_call_time">预约成功,通话开始时间为:</string>
+    <string name="contact_yuyue_address">预约地点：</string>
+    <string name="contact_success">已成功接受该服务申请</string>
+    <string name="contact_call">该用户联系电话：</string>
+    <string name="contact_next">下次再约</string>
+    <string name="contact_jieshou">欣然接受</string>
+    <string name="contact_send">发送</string>
+    <string name="contact_service_dacheng">服务已达成！</string>
+    <string name="contact_service_no_dacheng">服务未达成！</string>
+    <string name="contact_service_no_describe">服务说明：</string>
+    <string name="contact_hint">温馨提示：\n请您及时跟进服务申请，如有疑问，请联系薏米助理，电话：<u>400-900-3333</u></string>
+    <string name="ll_service_jiahao">加号服务</string>
+    <string name="ll_call_consult">预约通话</string>
+    <string name="bt_consult">立即沟通</string>
+    <string name="bt_consult_finished">服务结束</string>
+    <string name="ll_call_time">设置通话时间</string>
+    <string name="ll_call_one_time">设置单次通话时间</string>
+    <string name="contact_message_dialog">消息提示</string>
+    <!-- 财务详情 -->
+    <string name="bank_card">提现银行卡</string>
+    <string name="add_bank_card">添加</string>
+    <string name="income_expend">收入/支出</string>
+    <string name="doctor_income">收入</string>
+    <string name="doctor_expend">支出</string>
+    <string name="doctor_freeze">冻结/解冻</string>
+    <string name="how_tixian">如何提現</string>
+    <string name="step_one">步骤一</string>
+    <string name="step_one_contant">点击页面下方“添加”，进入银行卡添加页面</string>
+    <string name="step_two">步骤二</string>
+    <string name="step_two_contant">按照系统提示，填写一张属于您的个人银行卡资料信息</string>
+    <string name="step_three">步骤三</string>
+    <string name="step_three_contant">针对当月可用余额满100元人民币的用户，薏米工作人员将会在下一个月的前10个工作日内将款项划拨到您所填写的银行卡内,手续费由薏米网承担</string>
+    <string name="add_bank_card_title">添加银行卡</string>
+    <string name="add_bank_card_top">目前暂支持以下银行开通提现申请，请谅解！</string>
+    <string name="about_money">关于提现</string>
+    <string name="card_number">卡号:</string>
+    <string name="card_name">开卡姓名:</string>
+    <string name="dentity_card">身份证:</string>
+    <string name="open_account_bank">开户银行:</string>
+    <string name="open_account_address">开户支行:</string>
+
+    <!-- 订单详情 -->
+    <string name="text_order_price">订单金额</string>
+    <string name="text_evalute_title">服务评价:</string>
+    <string name="text_order_finish">服务达成!款项激活</string>
+    <string name="text_consult_now">立即沟通</string>
+    <string name="text_consult_three_day">48小时后</string>
+    <string name="text_service_end">服务结束</string>
+    <string name="text_pay_waiting">等待用户支付....</string>
+    <string name="text_pay_success">用户支付成功</string>
+    <string name="text_pay_success_detail">请务必在服务达成后要求用户评价！</string>
+    <string name="text_order_price_free">免费</string>
+    <string name="text_private_doctor_txt_notice">服务周期内无限制沟通</string>
+    <string name="text_private_doctor_phone_notice">1次/周</string>
+    <string name="text_private_doctor_detail">私人医生服务\n您所开启的一项包括图文咨询、预约通话的套餐服务，您需要根据套餐的内容与用户进行具体的文字沟通，以促成套餐所含各项服务的最终达成！</string>
+    <string name="text_set_price_dialog_title">设置本次服务价格</string>
+    <string name="text_set_price_dialog_submit">提交</string>
+    <string name="text_sys_offline_set_price_to_doctor">您已设置{service}服务的价格为：{price}元，请在用户支付成功后安排具体服务</string>
+    <string name="text_sys_offline_set_price_to_user">医生已设置{service}服务的价格为：{price}元，请前往订单页付款。</string>
+    <string name="text_sys_phone_set_time_to_doctor">已设定通话时间为{date} ，请届时保持电话通畅。</string>
+    <string name="text_sys_phone_set_time_to_user">医生已设定通话时间为{date}，请届时保持电话通畅。</string>
+
+    <!-- 用户资料 -->
+    <string name="member_name">姓名</string>
+    <string name="member_gender">性别</string>
+    <string name="member_age">年龄</string>
+    <string name="member_mobile">手机</string>
+    <string name="member_group">分组</string>
+    <string name="member_weiliao">标星</string>
+    <string name="system_msg">您有新的消息</string>
+    <string name="picture_send">发送照片</string>
+    <string name="change_avatar_take_photo">拍照</string>
+    <string name="change_avatar_album">相册</string>
+    <string name="text_none_contact">没有找到对应的数据</string>
+    <string name="text_get_contact_title">如何获取联系人？</string>
+    <string name="text_get_contact_step1">1: 点击右上角【邀请患者】</string>
+    <string name="text_get_contact_step2">2: 设置服务供用户购买：我 -> 服务设置</string>
+    <string name="text_get_contact_step2_sub">温馨提示，服务项目开启越多，获得购买的机会越大!</string>
+    <string name="text_get_contact_step3">3: 完善个人资料，包括个人履历、从业资历、获奖或发表论文情况等，都可以大大提高个人知名度和信任度，从而提高用户购买机会！</string>
+
+    <!-- IM -->
+    <string name="im_conflict">帐号登录异常,请重新登录</string>
+    <string name="get_vali_code">正在获取验证码,请稍候..</string>
+    <string name="input_content">请输入内容</string>
+    <string name="connect_chat_failed">您的账号还没连接上聊天服务器,暂无法下订单，请稍候再试</string>
+
+    <!-- 财务详情 -->
+    <string name="tixian_first">当您的账户余额达到100元，并已关联银行账户或支付宝账户，小薏可帮您开启“我要提现”按钮哦！</string>
+    <string name="finace_notice">为确保您能在最短的时间内收到您的报酬，小薏对您有几点小小的建议:</string>
+    <string name="finace_notice_2">为帮助小薏进行全名验证，并确保您能在最短时间内收到您的报酬，小薏建议您填写收款人姓名。</string>
+    <string name="finace_notice_text1">* 请确认个人信息的姓名和您的银行卡开户姓名相同</string>
+    <string name="finace_notice_text2">* 请确认您关联的银行卡为借记卡</string>
+    <string name="finace_notice_text3">* 请确认开户行信息与银行卡号对应</string>
+    <string name="finace_id">收款账户信息</string>
+    <string name="finace_about_cash">关于提现</string>
+    <string name="finace_notice_cash">小薏建议您每月累计提取小于或等于800元人民币，便可免去税额哦！</string>
+    <string name="finace_notice_blocking">冻结金额说明：</string>
+    <string name="finace_notice_blocking_1">* 您已成功申请提现，但还未到账的金额</string>
+    <string name="finace_notice_blocking_2">* 您还有未结束的收费服务订单，待服务结束金额将自动解冻</string>
+    <string name="finace_now">我要提现</string>
+    <string name="finace_finally">预计在1-3个工作日内到账</string>
+
+    <!-- 订单与聊天绑定 -->
+    <string name="order_null">暂无订单，您可以点击右上角【邀请患者】，邀请成功后，您可以在底部【患者】处查看。</string>
+    <string name="audit_tip_title">提示</string>
+    <string name="service_open_tip">该服务未开通，点击开通</string>
+
+    <!-- 资料认知提示窗口 -->
+    <string name="audit_tip_content">您的医生身份未验证，验证通过后才能使用该功能哦！是否现在验证？</string>
+    <string name="audit_button_cacel">以后再说</string>
+    <string name="audit_button_confirm">立即验证</string>
+
+    <!-- 订单分类界面 -->
+    <string name="search_order">pic搜索患者</string>
+    <string name="title_activity_logon_result">LogonResultActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 注册结果 -->
+    <string name="logon_success">恭喜您！</string>
+    <string name="logon_success_2">您的个人账户注册成功！</string>
+    <string name="logon_success_3">小薏提醒您：</string>
+    <string name="logon_success_4">完善资料后会有更多惊喜哦！您可体验小薏为您量身打造的优质服务，同时您的身份将对所有薏米患者公开。</string>
+    <string name="logon_success_5">完善资料</string>
+    <string name="logon_success_6">开始使用</string>
+
+    <!-- 邀请患者相关提示语 -->
+    <string name="cannot_invite_private">无法邀请患者</string>
+    <string name="cannot_invite_private_tip">您好！需要您完善详细资料后，即可体验薏米网的邀请患者功能，您可通过下方的“完善资料”按钮进行资料填写。</string>
+
+    <!-- 资料审核相关 -->
+    <string name="information_verifing">资料审核中...</string>
+    <string name="information_verifing_tip">小薏将在1个工作日内把审核结果发送至您注册所填写的手机号，请注意查收。</string>
+    <string name="verify_information">完善资料</string>
+    <string name="verify_close">关   闭</string>
+    <string name="verify_falied">对不起！</string>
+    <string name="verify_falied_reason">不通过原因：</string>
+    <string name="verify_failed_tip">您的资料审核不通过！</string>
+    <string name="submit_information_again">重新提交资料</string>
+    <string name="verify_success">您的资料已通过审核</string>
+    <string name="verify_success_tip">小薏已向薏米患者公开您的身份。</string>
+    <string name="verify_invite_patient">邀请患者</string>
+    <string name="infomation_preview">个人资料预览</string>
+    <string name="remarks">备注： </string>
+   	
+<!--  
+    <string name="chat_order_text_hint">您与用户通过发送图片、文字、语音的方式，进行的线上问诊服务。帮助用户初步解答病情是您应尽的责任和义务。 <br/>注：图文咨询不可作为疾病诊断的最终依据！  *单项单次图文咨询有效期为48小时！</string>
+    <string name="chat_order_phone_hint">通过电话沟通的方式进行的远程问诊服务。您需要尽快与用户文字沟通协商该服务的具体时间，并设置服务时间反馈给用户。您可以预约最近8小时内的可服务时间！  注：预约通话不可作为疾病诊断的最终依据！</string>
+    <string name="chat_order_jiuyi_hint">用户因病情较为紧急而寻求的加急挂号就诊服务。您需要与用户沟通具体的就诊医院、时间、挂号费用及其他费用等问题，并设定合理价格提供给用户购买。 用户支付成功后，协助用户具体落实该项服务是您应尽的责任和义务！</string>
+    <string name="chat_order_shangmen_hint">用户申请上门会诊时，系统已开放聊天功能，您可以与患者沟通上门服务地点、时间、费用以及用户病情等信息。沟通完成后，您需要设定一个价格合理的订单提供给用户购买！ /n 用户支付成功后，协助用户具体落实该项服务是您应尽的责任和义务！</string>
+    <string name="chat_order_zhuyuan_hint">用户因病情紧急而寻求的住院就医服务。您需要与用户进行具体沟通，协商住院的医院、地点、床位费及其他医疗服务费用等问题，并设定合理价格提供给用户购买。/n/n 用户支付成功后，协助用户具体落实该项服务是您应尽的责任和义务！</string>
+    <string name="chat_order_private_hint">您所开启的一项包括图文咨询、预约通话的套餐服务，您需要根据套餐的内容与用户进行具体的文字沟通，以促成套餐所含各项服务的最终达成！</string>
+    <string name="chat_order_custom_hint">是指用户发起的针对疾病康复服务的其他服务请求。请您在看到这条订单请求之后，积极与用户沟通服务的细节，并设置合理价格供用户购买。用户支付成功后，协助用户具体落实该项服务是您应尽的责任和义务！</string>
+ -->   
+    <string name="set_call_time">设置通话时间</string>
+    
+    <string name="info_not_verify">身份尚未验证</string>
+    <string name="info_not_verify_tip1">验证成功后</string>
+    <string name="info_not_verify_tip2">小薏帮您开启所有的服务</string>
+    <string name="info_not_verify_btn_1">马上验证</string>
+    <string name="info_not_verify_btn_2">下次再说</string>
+    
+    <!-- 添加银行卡 -->
+    <string name="add_bankcard_username">请输入姓名</string>
+    <string name="add_bankcard_cardId">请输入用户身份证号</string>
+    <string name="add_bankcard_bankname">例：中国工商银行荔湾支行</string>
+    <string name="add_bankcard_num">请输入银行卡号</string>
+    <string name="add_zhifubao_Id">请输入支付宝账号</string>
+    
+    <!-- 消息中心 -->
+    <string name="sms_order">订单服务短信</string>
+    <string name="sms_cash">提现短信</string>
+    <string name="sms_activity">活动短信</string>
+    <string name="sms_tip_title">温馨提示：</string>
+    <string name="sms_tip_1">*所有短信设置默认为开启状态</string>
+    <string name="sms_tip_2">*关闭后任何时候将不再接收小薏为您发送的短信</string>
+  
+    
+    <!-- 自媒体 -->
+    <string name="baike_selector_home">个人百科</string>
+    <string name="baike_selector_random">随便看看</string>
+    <string name="baike_selector_attention">我关注的</string>
+
+    <string name="baike_selector_all">所有消息</string>
+    <string name="baike_selector_praise">赞我的</string>
+    <string name="baike_selector_comment">评论我的</string>
+    <string name="baike_selector_share">分享我的</string>
+    <!--  
+	<string name="create_say_tip"><Data><![CDATA[如果您修改的内容文字较多（比如：文章、手术分享等），您还可通过以下途径发表：<br>1)通过访问薏米网官网<br><font color="#298bab"><b>http://www.ememed.net/welcome/doctor</b></font> ,进入“医生自媒体”专题页面进行操作；<br>2)先将内容用WORD文档整理好，再通过邮件形式发送薏米助理邮箱<font color="#298bab"><b>ememed_public@ememed.net</b></font>,薏米助理帮您在后台进行发布。<br>如需帮助，请致电薏米助理热线：<font color="#298bab"><b>4009003333</b></font>。]]></Data></string>      
+	-->
+	<string name="create_say_tip"><Data><![CDATA[如果您发表的内容较多（如：长图文文章、手术分享等），您可以通过电脑登录薏米网（<br><font color="#298bab"><b>web.ememed.net</b></font> ）的“医生自媒体”进行发布。如需帮助，请致电薏米助理热线：<font color="#298bab"><b>4009003333</b></font>。]]></Data></string>      
+	
+	<!-- 薏米花 -->
+    <string name="share_tip">分享后记得点击“返回薏米网”回到小薏身边才有薏米花哦~</string>
+	
+    
+    <!-- 患者分组 -->
+    <string name="search_huangze_group_hint">搜索姓名、交流记录等</string>
+
+    <string name="search_group_hint">请输入群号码或群名称</string>
+</resources>

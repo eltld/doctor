@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal" >
+    
+   <CheckBox
+       android:id="@+id/cb_choice"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:layout_marginLeft="10dp"
+       android:background="@drawable/bg_checkbox_selector"
+       android:button="@null"
+       android:layout_gravity="center_vertical"
+       />
+   
+  	<net.ememed.doctor2.widget.CircleImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" 
+            android:src="@drawable/avatar_small"/>
+   
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_vertical"
+       android:orientation="vertical"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp">
+       
+       <TextView
+           android:id="@+id/tv_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:text="张三"
+           />
+      
+       <TextView 
+           android:id="@+id/tv_context"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           
+           android:textSize="14sp"
+           android:textColor="@color/text_color_gray"
+           android:singleLine="true"
+           android:ellipsize="end"
+           android:visibility="gone"
+           />
+   </LinearLayout>
+
+</LinearLayout>

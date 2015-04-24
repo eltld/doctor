@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+		
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_default"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <LinearLayout
+                        android:id="@+id/lt_user_img"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:onClick="doClick"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_touxiang" />
+ 
+                        <net.ememed.doctor2.widget.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/iv_getuser_AVATAR"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="30dp"
+                            android:clickable="true"
+                            android:onClick="doClick"
+                            android:src="@drawable/avatar_medium" 
+                            app:border_color="@color/white"/>
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <LinearLayout
+                        android:id="@+id/lt_realname"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_name" />
+
+                        <TextView
+                            android:id="@+id/tv_realname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/light_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <LinearLayout
+                        android:id="@+id/lt_realsex"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_sex" />
+
+                        <TextView
+                            android:id="@+id/tv_realsex"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/light_gray" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <LinearLayout
+                        android:id="@+id/lt_realcall"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:onClick="doClick"
+                        android:clickable="true" >
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="注册手机号" />
+
+                        <TextView
+                            android:id="@+id/tv_realcall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/light_gray" />
+                        
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <LinearLayout
+                        android:id="@+id/lt_realemail"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:onClick="doClick" >
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/set_email_address" />
+
+                        <TextView
+                            android:id="@+id/tv_realemail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"                        
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/light_gray" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/asterisk_prompt"
+                    android:textColor="@color/light_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/list_item_default"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <!-- 执业证书编码  -->
+                    <LinearLayout
+                        android:id="@+id/lt_realcert_number"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:onClick="doClick" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/set_realcert_number" />
+
+                        <TextView
+                            android:id="@+id/tv_realcert_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/light_gray" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_realcert_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <!-- 执业证首页 -->
+                    <LinearLayout
+                        android:id="@+id/lt_realcert_positive"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/tv_cert_positive"
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_cert_positive" />
+
+                        <ImageView
+                            android:id="@+id/cert_positive"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            android:onClick="doClick"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/certificate_default" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_realcert_positive"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <!-- 执业证次页 -->
+                    <LinearLayout
+                        android:id="@+id/lt_realcert_opposite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:id="@+id/tv_cert_opposite"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                           
+                            android:text="@string/set_cert_opposite" />
+
+                        <ImageView
+                            android:id="@+id/cert_opposite"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            android:onClick="doClick"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/certificate_default" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_realcert_opposite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <!-- 医师资格证首页 -->
+                    <LinearLayout
+                        android:id="@+id/lt_medical_licence_positive"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:visibility="gone"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_licence_positive" />
+
+                        <ImageView
+                            android:id="@+id/licence_positive"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            android:onClick="doClick"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/certificate_default" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_medical_licence_positive"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" 
+                        android:visibility="gone"
+                        />
+                    
+                    <!-- 医师资格证次页 -->
+                    <LinearLayout
+                        android:id="@+id/lt_medical_licence_opposite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:visibility="gone"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_licence_opposite" />
+
+                        <ImageView
+                            android:id="@+id/licence_opposite"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            android:onClick="doClick"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/certificate_default" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_medical_licence_opposite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/driver"/>
+                    
+                    <!-- 胸牌-->
+                    <LinearLayout
+                        android:id="@+id/lt_breast_plate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:visibility="gone"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_breast_plate" />
+
+                        <ImageView
+                            android:id="@+id/pic_breast_plate"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            android:onClick="doClick"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/certificate_default" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_breast_plate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/driver" />
+                    
+                    
+                    <!-- 工作证 -->
+                    <LinearLayout
+                        android:id="@+id/lt_work_permit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:visibility="gone"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_work_permit" />
+
+                        <ImageView
+                            android:id="@+id/pic_work_permit"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:clickable="true"
+                            android:onClick="doClick"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/certificate_default" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_work_permit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/driver" />
+                    
+                    <!-- 职称 -->
+                    <LinearLayout
+                        android:id="@+id/lt_realposition"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_position" />
+
+                        <TextView
+                            android:id="@+id/tv_position"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/light_gray" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <!-- 就职医院 -->
+                    <LinearLayout
+                        android:id="@+id/lt_hospital"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/set_hospital" />
+
+                        <TextView
+                            android:id="@+id/tv_hospital"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/light_gray" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <!-- 就职科室 -->
+                    <LinearLayout
+                        android:id="@+id/lt_hospital_laboratory"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                         android:clickable="true"
+                        android:onClick="doClick"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/set_hospital_laboratory" />
+
+                        <TextView
+                            android:id="@+id/tv_hospital_laboratory"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/light_gray" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+                    
+                     <!-- 就职科室电话 -->
+                    <LinearLayout
+                        android:id="@+id/lt_laboratory_phone"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                         android:clickable="true"
+                        android:onClick="doClick"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:visibility="invisible"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/set_laboratory_phone" />
+
+                        <TextView
+                            android:id="@+id/tv_laboratory_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/light_gray" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+
+                    <!-- 专业属性 -->
+                    <LinearLayout
+                        android:id="@+id/lt_prof_attributes"
+                        style="@style/style_main_item_bg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="doClick"
+                        android:layout_gravity="center_horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            style="@style/public_text_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/set_prof_attributes" />
+
+                        <TextView
+                            android:id="@+id/tv_spec"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/light_gray" />
+                        
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+                </LinearLayout>
+                
+                <!-- 擅长 -->
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        />
+                     <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="擅长"
+                        />
+                </LinearLayout>
+                
+                <View
+                      android:layout_width="fill_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/driver" />
+
+                <!-- 擅长 -->
+                <LinearLayout
+                    android:id="@+id/lt_realskilled"
+                    style="@style/style_main_item_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:onClick="doClick" >
+					<!--  
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        style="@style/public_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/set_realskilled" />
+					-->
+                    <TextView
+                        android:id="@+id/tv_realskilled"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/light_gray" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                </LinearLayout>
+                
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/driver" />
+                
+                <!-- 个人详情 -->
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="*"
+                        android:visibility="gone"
+                        android:textColor="@color/red"
+                        />
+                     <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="个人详情"
+                        />
+                </LinearLayout>
+                
+                <View
+                      android:layout_width="fill_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/driver" />
+                
+                <!-- 个人详情 -->
+                <LinearLayout
+                    android:id="@+id/lt_doctoe_resume"
+                    style="@style/style_main_item_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:onClick="doClick" >
+
+                    <!--  
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text=" "
+                        android:textSize="17dp" />
+
+                    <TextView
+                        style="@style/public_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="个人详情" />
+					-->
+                    <TextView
+                        android:id="@+id/tv_doctor_resume"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/light_gray" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/u_right_arrow_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+	
+	<include 
+        android:id="@+id/layout_verifing"
+        layout="@layout/activity_veryfing" 
+        android:visibility="gone"/>
+    <include 
+        android:id="@+id/layout_verify_failed"
+        layout="@layout/activity_veryfy_failed"
+        android:visibility="gone"/>
+    <include 
+        android:id="@+id/layout_verify_success"
+        layout="@layout/activity_verify_success" 
+        android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

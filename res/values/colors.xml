@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="error_item_color">#F6EBE6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="main_page_bg">#e9ebec</color>
+    <color name="transparent">#00000000</color>
+    <color name="topbg_green">#4c7316</color>
+    <color name="text_color_green">#54AF6C</color>
+    <color name="tab_light_gray">#939393</color>
+    <color name="tab_light_green">#55b76c</color>
+    <color name="color_listview_deal">#ECEEEF</color>
+    <color name="color_listview">#E1E1E1</color>
+    <color name="red">#ff0000</color>
+    <color name="pink">#F08394</color>
+    <color name="light_pink">#FEA799</color>
+    <color name="gold">#b89766</color>
+    <color name="green">#29969c</color>
+    <color name="bottle_green">#54B76C</color>
+    <color name="light_green2">#90ECC5</color>
+    <color name="gray">#E8E8E8</color>
+    <color name="light_gray">#9D9D9D</color>
+    <color name="reseda">#EFEFEF</color>
+    <color name="driver">#e5e5e5</color>
+    <color name="bg_gray">#ECEEEB</color>
+    <color name="huise">#6c6c6c</color>
+    <color name="light_red">#DD2F2F</color>
+    <color name="dark_red">#C51313</color>
+    <color name="rose_hermosa">#FD6138</color>
+    <color name="default_color">#012b13</color>
+    <color name="bg_gray_alipay">#ececed</color>
+    <color name="default1">#448FC4</color>
+    <color name="light_green">#B6F8BE</color>
+    <color name="verify_pink">#fdccd5</color>
+    <color name="verify_orange">#fec79f</color>
+    <color name="lighter_gray">#E3E3E3</color>
+    <color name="home_notice_pink">#ffb3b3</color>
+    <color name="home_notice_green">#98d6a1</color>
+    <color name="home_notice_blue">#9ec5e2</color>
+    <color name="home_notice_yellow">#f3cb60</color>
+    <color name="blue">#298bab</color>
+    <color name="grayness">#BEBEBE</color>
+    
+    <color name="bg_orange">#ff7e30</color>
+    <color name="bg_orange_dark">#d86b28</color>
+    <color name="text_color_gray">#aaaaaa</color>
+    
+    <drawable name="transparent_none">#00000000</drawable>
+    <drawable name="time_line">#B6F8BE</drawable>
+
+    <color name="red_orange">#DC4609</color>
+    <color name="umeng_fb_color_btn_pressed">#1495F7</color>
+    <color name="umeng_fb_color_btn_normal">#333333</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="orange">#FFA500</color>
+    
+    <color name="bg_color">#EFF4EF</color>
+    
+    <color name="text_color1">#FFFFFF</color>
+    <color name="divider_color">#11000000</color>
+    <color name="msg_color">#FFFFFFFF</color>
+    <color name="dialog_bg">#ffe74c3c</color>
+    
+    <color name="btn_press_color">#1c9dd8</color>
+    <color name="btn_unpress_color">#48baed</color>
+    
+    <!-- finace -->
+    <color name="finace_light_orange">#FF6347</color>
+
+    
+	<!-- <color name="btn_gray_normal">#b3b3b3</color>  -->
+	
+
+    <color name="btn_bg_green">#4c7316</color>
+    <color name="btn_bg_green_pressed">#406112</color>
+    <color name="TextColorGray">#FF505050</color>
+    <color name="TextColorOrange">#dc903a</color>
+    
+	
+    <color name="question_pool_btn_down">#D6B43C</color>
+	<color name="question_pool_btn_up">#DF933A</color>
+	
+	<color name="list_search_color_blue">#00b7ff</color>
+	<color name="black_half">#e0000000</color>
+	
+	<!-- comm -->
+	<color name="prime_green">#4b7315</color>
+	
+	<!-- baike visitor -->
+	<color name="visitor_tab_green">#7bbb24</color>
+	<color name="visitor_tab_gray">#666666</color>
+	
+	<!-- communication -->
+	
+</resources>

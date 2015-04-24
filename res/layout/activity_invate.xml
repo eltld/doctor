@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/invate_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+    
+    <RelativeLayout
+            android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+	    <ScrollView 
+	        android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="2" >
+			
+	        <LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginLeft="25dp"
+			    android:layout_marginRight="25dp" >
+			    
+			    <LinearLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:orientation="vertical" >
+				
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="#90D0A0"
+			            android:textSize="20sp"
+			            android:text="我的邀请码:" />
+			        
+			        <LinearLayout 
+			            android:layout_marginTop="10dp"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal" 
+					    android:gravity="center_vertical">
+					    
+					    <ImageView
+					        android:layout_gravity="center_vertical"
+					        android:id="@+id/iv_bg_empty"
+					        android:layout_width="120dp"
+					        android:layout_height="120dp"
+					         />
+					
+					    <LinearLayout
+					        android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:orientation="horizontal" >
+						    
+						    <ImageView
+						        android:layout_width="0dp"
+						        android:layout_height="wrap_content"
+						        android:layout_weight="2"
+						        android:layout_gravity="center_vertical" />
+						    
+						    <TextView
+						        android:id="@+id/tv_notice"
+						        android:layout_width="0dp"
+						        android:layout_height="wrap_content"
+						        android:layout_weight="3"
+						        android:layout_gravity="center_vertical"
+						        android:gravity="center_horizontal"
+						        android:text="给好友扫一扫即可完成邀请"
+						        android:textColor="#90D0A0"
+						        android:textSize="18sp" />
+					    </LinearLayout>
+					</LinearLayout>
+			    </LinearLayout>
+		    
+			    <LinearLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:orientation="vertical" >
+				
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="#90D0A0"
+			            android:textSize="20sp"
+			            android:text="规则及奖励" />
+			        
+			        <TextView
+			            android:layout_marginTop="10dp"
+			            android:id="@+id/tv_invite_rule"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="20dp"
+			            android:textSize="16sp"
+			            android:text="" />
+			    </LinearLayout>
+			    
+			    <LinearLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical" >
+				
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="#90D0A0"
+			            android:textSize="20sp"
+			            android:text="完成情况" />
+			        
+			        <TextView
+			            android:id="@+id/tv_completed1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginLeft="20dp"
+			            android:textSize="16sp"
+			            android:text="" />
+			        <TextView
+			            android:id="@+id/tv_completed2"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="5dp"
+			            android:layout_marginLeft="20dp"
+			            android:textSize="16sp"
+			            android:text="" />
+			    </LinearLayout>
+			    
+
+			    
+			</LinearLayout>
+	    </ScrollView>
+
+	    	 <LinearLayout
+	    	     android:layout_width="match_parent"
+	    	     android:layout_height="wrap_content"
+	    	     android:gravity="center_horizontal"
+	    	     android:orientation="vertical" >
+				
+			        <Button
+			            android:id="@+id/btn_invate_now"
+			            android:layout_width="200dp"
+			            android:layout_height="wrap_content"
+			            android:layout_margin="10dp"
+			            android:background="@drawable/button_rect_selector_corner_single"
+			            android:onClick="doClick"
+			            android:text="立即邀请"
+
+			            android:textColor="@color/white" />
+	
+			    </LinearLayout>
+
+        </LinearLayout>
+        
+    	    
+	    <View
+	        android:id="@+id/bg_gray"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#7F000000"
+	        android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

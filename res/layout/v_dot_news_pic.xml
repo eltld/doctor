@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/v_dot0"
+    style="@style/dot_home_style"
+    android:background="@drawable/dot_normal" />

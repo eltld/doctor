@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:porterduff="http://schemas.android.com/apk/res/net.ememed.doctor2"
+    android:id="@+id/showImageView_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <net.ememed.doctor2.widget.ImageZoomView
+            android:id="@+id/zoomView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/album_nophoto"
+             >
+        </net.ememed.doctor2.widget.ImageZoomView>
+        <ZoomControls
+            android:id="@+id/zoomCtrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+        </ZoomControls>
+    </RelativeLayout>
+
+    <include layout="@layout/top_bar_doctor_green" /> 
+
+</FrameLayout>

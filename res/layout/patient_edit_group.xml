@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f0f0f0">
+    <include layout="@layout/top_bar_doctor_green" /> 
+    <LinearLayout 
+        android:id="@+id/ll_patient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+	    <LinearLayout 
+	        android:id="@+id/ll_patient_edit_group"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	       	android:orientation="horizontal"
+	       	android:background="@drawable/list_item_default"
+	       	android:padding="13dp"
+	       	android:layout_marginTop="10dp"
+	       	android:layout_marginBottom="10dp"
+	       	android:onClick="doClick"
+	        >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:textSize="15sp"
+	            android:text="添加新分组"
+	            />
+	        <ImageView 
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            android:background="@drawable/arrow_icon"
+	            android:layout_gravity="center"
+	            />
+	    </LinearLayout>
+	    <ListView 
+	        android:id="@+id/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="#dfdfdf"
+	        android:dividerHeight="1dp"
+	        ></ListView>
+	</LinearLayout>
+	<include layout="@layout/u_empty_view" android:visibility="gone" />	
+	<include layout="@layout/u_net_unavailable" android:visibility="gone" />
+</LinearLayout>

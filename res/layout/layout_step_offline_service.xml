@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_state_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_step_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/step_circle_1" />
+
+    <ImageView
+        android:id="@+id/line_step_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_step_1"
+        android:src="@drawable/step_line_5" />
+
+    <ImageView
+        android:id="@+id/iv_step_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/line_step_1"
+        android:src="@drawable/step_circle_2" />
+
+    <ImageView
+        android:id="@+id/line_step_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_step_2"
+        android:src="@drawable/step_line_5" />
+
+    <ImageView
+        android:id="@+id/iv_step_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/line_step_2"
+        android:src="@drawable/step_circle_3" />
+
+    <ImageView
+        android:id="@+id/line_step_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_step_3"
+        android:src="@drawable/step_line_5" />
+    <ImageView
+        android:id="@+id/iv_step_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/line_step_3"
+        android:src="@drawable/step_circle_4" />
+
+    <ImageView
+        android:id="@+id/line_step_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_step_4"
+        android:src="@drawable/step_line_5" />
+    
+    <ImageView
+        android:id="@+id/iv_step_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/line_step_4"
+        android:src="@drawable/step_circle_5" />
+
+    <TextView
+        android:id="@+id/tv_step_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_step_4"
+        android:layout_marginTop="28dp"
+        android:text="沟通协商"
+        android:textColor="@color/grayness" />
+
+    <TextView
+        android:id="@+id/tv_step_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line_step_1"
+        android:layout_alignTop="@+id/tv_step_1"
+        android:layout_marginLeft="@dimen/step_offline_padding_left"
+        android:text="设置价格"
+        android:textColor="@color/grayness" />
+
+    <TextView
+        android:id="@+id/tv_step_3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line_step_2"
+        android:layout_below="@id/iv_step_3"
+        android:layout_marginLeft="@dimen/step_offline_padding_left"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="用户支付"
+        android:textColor="@color/grayness" />
+
+    <TextView
+        android:id="@+id/tv_step_4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line_step_3"
+        android:layout_below="@id/iv_step_3"
+        android:layout_marginLeft="@dimen/step_offline_padding_left"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="安排就医"
+        android:textColor="@color/grayness" />
+    <TextView
+        android:id="@+id/tv_step_5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/line_step_4"
+        android:layout_below="@id/iv_step_4"
+      android:layout_marginLeft="@dimen/step_offline_padding_left"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="结束"
+        android:textColor="@color/grayness" />
+
+</RelativeLayout>

@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+	<FrameLayout 
+	   	android:layout_width="match_parent"
+	   	android:layout_height="match_parent">
+	
+    <ScrollView
+        android:id="@+id/scv_info"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"      
+        android:background="@color/reseda" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/reseda"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/reseda"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_register_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/asterisk_prompt"
+                        android:textColor="@color/light_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/list_item_default"
+                        android:orientation="vertical" >
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+
+                        <!-- 头像 -->
+
+                        <LinearLayout
+                            android:id="@+id/lt_avatar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:onClick="doClick"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_touxiang" />
+
+                            <ImageView
+                                android:id="@+id/iv_avatar"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:onClick="doClick"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/certificate_default" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        <!-- end头像 -->
+                        
+                        <TextView 
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@color/driver"
+                            android:textColor="@color/light_gray"
+                            android:text="@string/register_pic_upload_tip"
+                            />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+
+                        <!-- 证件类型 -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_certificate" />
+
+                            <Spinner
+                                android:id="@+id/spinner_certificate_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/certificate_type"
+                                android:gravity="right" />
+                        </LinearLayout>
+                        <!-- end证件类型 -->
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+
+                        <!-- 医师执业证首页 -->
+
+                        <LinearLayout
+                            android:id="@+id/lt_realcert_positive"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:onClick="doClick"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_second_title"
+                                android:id="@+id/tv_cert_positive"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_cert_positive" />
+
+                            <ImageView
+                                android:id="@+id/cert_positive"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:onClick="doClick"
+                                android:src="@drawable/certificate_default" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        <!-- end医师执业证首页 -->
+
+                        <View
+                            android:id="@+id/line_realcert_positive"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+
+                        <!-- 医师执业证次页 -->
+
+                        <LinearLayout
+                            android:id="@+id/lt_realcert_opposite"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:onClick="doClick"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_second_title"
+                                android:id="@+id/tv_cert_opposite"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_cert_opposite" />
+
+                            <ImageView
+                                android:id="@+id/cert_opposite"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:onClick="doClick"
+                                android:src="@drawable/certificate_default" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        <!-- end医师执业证次页 -->
+
+                        <View
+                            android:id="@+id/line_realcert_opposite"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+
+                        <!-- 医师资格证首页 -->
+
+                       <!--  <LinearLayout
+                            android:id="@+id/lt_medical_licence_positive"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:onClick="doClick"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_second_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_licence_positive" />
+
+                            <ImageView
+                                android:id="@+id/licence_positive"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:onClick="doClick"
+                                android:src="@drawable/certificate_default" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                            
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/line_medical_licence_positive"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" /> -->
+
+                        <!-- 医师资格证次页 -->
+
+                        <!-- <LinearLayout
+                            android:id="@+id/lt_medical_licence_oppsite"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:onClick="doClick"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_second_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_licence_opposite" />
+
+                            <ImageView
+                                android:id="@+id/licence_opposite"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:onClick="doClick"
+                                android:src="@drawable/certificate_default" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        
+
+                        <View
+                            android:id="@+id/line_medical_licence_oppsite"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+ -->
+                        <!-- 胸牌 -->
+
+                       <!--  <LinearLayout
+                            android:id="@+id/lt_breast_plate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:onClick="doClick"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_second_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_breast_plate" />
+
+                            <ImageView
+                                android:id="@+id/pic_breast_plate"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:onClick="doClick"
+                                android:src="@drawable/certificate_default" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        
+
+                        <View
+                            android:id="@+id/line_breast_plate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" /> -->
+
+                        <!-- 工作证 -->
+
+                        <!-- <LinearLayout
+                            android:id="@+id/lt_work_permit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:onClick="doClick"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_second_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_work_permit" />
+
+                            <ImageView
+                                android:id="@+id/pic_work_permit"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="5dp"
+                                android:onClick="doClick"
+                                android:src="@drawable/certificate_default" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        
+
+                        <View
+                            android:id="@+id/line_work_permit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" /> -->
+
+                        <!-- 执业证书编码 -->
+
+                        <LinearLayout
+                            android:id="@+id/lt_realcert_number"
+                            style="@style/style_main_item_bg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="true"
+                            android:onClick="doClick"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_realcert_number" />
+
+                            <TextView
+                                android:id="@+id/tv_realcert_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:gravity="right|center_vertical"
+                                android:textColor="@color/light_gray"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        <!-- end执业证书编码 -->
+
+                        <View
+                            android:id="@+id/line_realcert_number"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver"
+                            android:visibility="gone" />
+
+                        <!-- 身份证号 -->
+                        <LinearLayout
+                            android:id="@+id/lt_id_number"
+                            style="@style/style_main_item_bg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="true"
+                            android:visibility="gone"
+                            android:onClick="doClick" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_id_number" />
+
+                            <TextView
+                                android:id="@+id/tv_id_number"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical"
+                                android:textColor="@color/light_gray"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:visibility="gone"
+                            android:background="@color/driver" />
+						 <!-- end身份证号 -->
+						 
+						 <!-- Email -->
+						  <LinearLayout
+                            android:id="@+id/lt_email"
+                            style="@style/style_main_item_bg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="true"
+                            android:onClick="doClick" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_email_address" />
+
+                            <TextView
+                                android:id="@+id/tv_email"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical"
+                                android:textColor="@color/light_gray"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+						<!-- end Email -->
+						  
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+                        
+                        
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_sex" />
+
+                            <Spinner
+                                android:id="@+id/spinner_sex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/sex1"
+                                android:gravity="right"
+                                android:minWidth="20dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+
+                        <!-- 职称 -->
+                        <LinearLayout
+                            android:id="@+id/lt_realposition"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_position" />
+
+                            <Spinner
+                                android:id="@+id/spinner_position"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/brands"
+                                android:gravity="right" />
+                        </LinearLayout>
+                        <!-- end职称 -->
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+
+                        <LinearLayout
+                            android:id="@+id/lt_hospital"
+                            style="@style/style_main_item_bg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="true"
+                            android:onClick="doClick" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_hospital" />
+
+                            <TextView
+                                android:id="@+id/tv_hospital"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical"
+                                android:textColor="@color/light_gray"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+
+                        <LinearLayout
+                            android:id="@+id/lt_hospital_laboratory"
+                            style="@style/style_main_item_bg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="true"
+                            android:onClick="doClick" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_hospital_laboratory" />
+
+                            <TextView
+                                android:id="@+id/tv_hospital_laboratory"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical"
+                                android:textColor="@color/light_gray"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        
+                        <View
+                           android:layout_width="fill_parent"
+                           android:layout_height="1dp"
+                           android:background="@color/driver" />
+                        
+                        <!-- 就职科室电话 -->
+                        <LinearLayout
+                            android:id="@+id/lt_laboratory_phone"
+                            style="@style/style_main_item_bg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="true"
+                            android:onClick="doClick" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:visibility="invisible"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_laboratory_phone" />
+
+                            <TextView
+                                android:id="@+id/tv_laboratory_phone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical"
+                                android:textColor="@color/light_gray"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+						<!-- end 就职科室电话 -->
+						
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+
+                        <!-- 擅长 -->
+                        <LinearLayout
+                            android:id="@+id/lt_realskilled"
+                            style="@style/style_main_item_bg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="true"
+                            android:onClick="doClick" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_realskilled" />
+
+                            <TextView
+                                android:id="@+id/tv_realskilled"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical"
+                                android:textColor="@color/light_gray"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        <!-- end 擅长 -->
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+                        
+                        <!-- 个人详情 -->
+                         <LinearLayout
+                            android:id="@+id/lt_detail_info"
+                            style="@style/style_main_item_bg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:clickable="true"
+                            android:onClick="doClick" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:visibility="invisible"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                style="@style/public_text_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:text="@string/set_detail_info" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_info"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical"
+                                android:textColor="@color/light_gray"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/u_right_arrow_gray" />
+                        </LinearLayout>
+                        <!-- end 个人详情 -->
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/driver" />
+                        
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bt_login"
+                        android:onClick="doClick"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/bt_submit_to_ememed"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </LinearLayout>
+                <!-- 之前的 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_register_result_tips"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_register_result_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="30dp"
+                        android:paddingTop="30dp" >
+
+                        <ImageView
+                            android:id="@+id/iv_register_tips_gou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_register_success_tick" />
+
+                        <TextView
+                            android:id="@+id/tv_uploaded_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="证件已提交成功"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="80dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_verify_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_verify_failed_reason"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_register_result"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bt_login"
+                    android:onClick="doClick"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/bt_submit_to_ememed"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <include 
+        android:id="@+id/layout_verifing"
+        layout="@layout/activity_veryfing" 
+        android:visibility="gone"/>
+    <include 
+        android:id="@+id/layout_verify_failed"
+        layout="@layout/activity_veryfy_failed"
+        android:visibility="gone"/>
+    <include 
+        android:id="@+id/layout_verify_success"
+        layout="@layout/activity_verify_success" 
+        android:visibility="gone"/>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_group_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="输入群号或关键词"
+            android:maxLines="15" />
+
+        <ImageButton
+            android:id="@+id/ibtn_find_group"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_home_search_nor"
+            android:onClick="doClick" />
+    </LinearLayout>
+
+    <net.ememed.doctor2.widget.RefreshListView
+        android:id="@+id/lv_contact_class"
+        style="@style/listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </net.ememed.doctor2.widget.RefreshListView>
+
+    <include layout="@layout/u_empty_view" />
+
+    <include layout="@layout/u_net_unavailable" />
+
+</LinearLayout>

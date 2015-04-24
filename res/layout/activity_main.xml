@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/home_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#efefef"
+        android:orientation="vertical" >
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b0b0b0" />
+
+    <LinearLayout
+        android:id="@+id/home_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:onClick="doClick" >
+
+            <LinearLayout
+                android:id="@+id/ll_tab_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/home_tab_home"
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/a1_selector"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/tv_tab_bottom_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/tab_bottom_home"
+                    android:textColor="@color/text_color_green"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_tab_home_count_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/ll_tab_home"
+                android:background="@drawable/noti_new"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:onClick="doClick" >
+
+            <LinearLayout
+                android:id="@+id/ll_tab_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/home_tab_people"
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/a2_selector"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/tv_tab_bottom_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/tab_bottom_contact"
+                    android:textColor="@color/tab_light_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_tab_people_count_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/ll_tab_people"
+                android:background="@drawable/contact_red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+       
+        <RelativeLayout
+            android:id="@+id/rl_tab_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:onClick="doClick" >
+
+            <ImageView
+                android:id="@+id/home_tab_friend_count_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/ll_tab_friend"
+                android:background="@drawable/contact_red"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_tab_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/home_tab_friend"
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/a5_selector"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/tv_tab_bottom_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/tab_bottom_friend"
+                    android:textColor="@color/tab_light_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_tab_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="doClick"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/home_tab_service"
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/a3_selector"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/tv_tab_bottom_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/tab_bottom_service"
+                    android:textColor="@color/tab_light_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/home_tab_server_count_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/ll_tab_service"
+                android:background="@drawable/contact_red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:onClick="doClick"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/home_tab_me"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:background="@drawable/a4_selector"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tv_tab_bottom_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/tab_bottom_me"
+                android:textColor="@color/tab_light_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

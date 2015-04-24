@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        
+        <TextView
+           style="@style/text_style_1"
+           android:text="姓        名"/>
+        
+        <EditText
+           android:id="@+id/et_name"
+           style="@style/text_style_2"
+           android:background="@null"
+           android:hint="@string/add_bankcard_username"
+           />
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color_gray"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        
+        <TextView
+           style="@style/text_style_1"
+           android:text="身份证号"/>
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="20dp"
+           android:textColor="@color/red"
+           android:text="（非必填）"/>
+        
+        <EditText
+           android:id="@+id/et_card_num"
+           style="@style/text_style_2"
+           android:background="@null"
+           android:inputType="number"
+           android:hint="@string/add_bankcard_cardId"/>
+        
+    </LinearLayout>
+    
+     <!-- <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color_gray"/> -->
+     
+      <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        
+        <TextView
+           style="@style/text_style_1"
+           android:text="开户银行"/>
+        
+        <EditText
+           android:id="@+id/et_bank_name"
+           style="@style/text_style_2"
+           android:background="@null"
+           android:hint="@string/add_bankcard_bankname"/>
+        
+    </LinearLayout>
+    
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color_gray"/>
+     
+      <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        
+        <TextView
+           style="@style/text_style_1"
+           android:text="卡        号"/>
+        
+        <EditText
+           android:id="@+id/et_bankcard_num"
+           style="@style/text_style_2"
+           android:background="@null"
+           android:inputType="number"
+           android:hint="@string/add_bankcard_num"/>
+        
+    </LinearLayout>
+    
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color_gray"/>
+     
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         <ImageView 
+             android:layout_width="13dp"
+             android:layout_height="13dp"
+             android:layout_marginTop="2dp"
+             android:layout_marginLeft="15dp"
+             android:src="@drawable/finace_tip_2"
+             />
+         <TextView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/finace_notice"
+             android:layout_marginRight="15dp"
+             android:textColor="@color/bg_orange_dark"
+             android:textSize="13sp"
+             />
+         
+     </LinearLayout>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+         <TextView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/finace_notice_text1"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:textColor="@color/text_color_gray"
+             android:textSize="13sp"
+             />
+         <TextView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/finace_notice_text2"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:textColor="@color/text_color_gray"
+             android:textSize="13sp"
+             />
+         <TextView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/finace_notice_text3"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:textColor="@color/text_color_gray"
+             android:textSize="13sp"
+             />
+         
+     </LinearLayout>
+    
+
+</LinearLayout>

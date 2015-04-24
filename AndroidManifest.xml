@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.ememed.doctor2"
+    android:versionCode="23"
+    android:versionName="2.3.1" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="net.ememed.doctor2.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="net.ememed.doctor2.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppFullScreenTheme" >
+
+            <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 显示数据 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 定义成浏览器类型，有URL需要处理时会过滤 -->
+                <data android:scheme="ememeddoctor" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/homeStyledIndicators"
+            android:launchMode="singleTask"
+             >
+
+            <!-- android:theme="@android:style/Theme.Light" -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 显示数据 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 定义成浏览器类型，有URL需要处理时会过滤 -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.PersonInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.PreeChatActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.GroupsChatActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.MicroChatActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.PeerAnswerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ShowImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ClaimListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.QuestionPoolActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- finace -->
+        <activity
+            android:name="net.ememed.doctor2.finace.FinaceDetails2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.BankcardListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.AddBankcardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.AddZhifubaoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 2014-12-17-llj -->
+        <activity
+            android:name="net.ememed.doctor2.finace.FinaceWeb2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.FinaceBaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.FinaceNowCashActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.FinaceFinallyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.FinaceRecentIncomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.FinaceRecentCashActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.BankCardDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.finace.ZhifubaoDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.OrderClassifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="net.ememed.doctor2.activity.AboutUsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.FinaceDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.MoneyApplyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SettingAppActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SettingPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServiceEvaluationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ProblemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ProblemInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.GroupFindActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServiceAllSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServicePackageSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServiceTijianSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServiceZhunyuanSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.MyContactActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServiceShangmenSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServicePhoneConsultSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.GroupDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.GroupSucceeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServiceJiahaoSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServiceTextConsultSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.DoctorChatActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.GroupLogActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.PacketServiceListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.RegisterByMobileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.RegisterSuccessActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.BusinessCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Round.Dialog" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.VerifyPaperActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.UploadPaperActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.WebViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.WebViewThirdServiceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.LogonsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ServiceSettingGuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ConsultInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SaveNameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.GroupCreateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SaveCallActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SaveEmailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SaveCertNumberActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SaveHospitalActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SaveHospitalLabActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SaveSkilledActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.RoomsListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.PhotoDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.FinaceListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.ContactInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.IntroduceListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.DrawCashActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.TextConsultPriceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage" />
+        <activity
+            android:name="net.ememed.doctor2.activity.SeekPwdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.BankCardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.PrivateDoctorPriceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.DoctorInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.InviteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.PhoneConsultPriceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.RemindOpenVerifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 群发消息 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.MassMessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.EditMassMessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.ememed.doctor2.activity.OrderDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.FeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SaveResumeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.SaveRoomPhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 消息中心 -->
+        <activity
+            android:name="net.ememed.doctor2.message_center.MessageCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.message_center.MessageListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.message_center.MessageSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 自媒体 -->
+        <activity
+            android:name="net.ememed.doctor2.baike.PersonBaikeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.CreateShuoshuoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.SayDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.PicViewPagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.RewardListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.RewardDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.MyFansActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.OtherBaikeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.MyAttentionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.DoctorSimpleInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.baike.BaikeHomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 薏米花 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.ExchangeRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+
+        <!-- 搜索医生好友 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.FindDoctorFriendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- 患者搜索 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.SearchPatientActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 患者通讯录 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.PatientTongxunluActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 设置备注信息 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.RemarkInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 患者分组 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.PatientGroupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 编辑分组 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.PatientEditGroupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 添加修改分组 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.PatientGroupAddActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 薏米花 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.YimiScoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 薏米花兑换 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.ScoreExchangeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 赚取更多薏米花 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.EarnMorePointActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 通知消息列表 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.NoticeListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- 群组功能 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.GroupSearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.GroupDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Caution! Do not change this app key. It is only for demo usage. -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53ffeae4fd98c5030d038389" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ememed" >
+        </meta-data>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="net.ememed.doctor2" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+            	如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+            	事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+            	则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent1102305084" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="net.ememed.user2.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="net.ememed.doctor2" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <receiver
+            android:name="net.ememed.doctor2.receiver.JpushReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <category android:name="net.ememed.doctor2" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="6fb246269b34c7845fe6862f" />
+        <!-- 地图 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.BaiduMapActivity"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 自定义的contextmenu -->
+        <activity
+            android:name="net.ememed.doctor2.activity.ContextMenu"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <!-- 自定义的alertdialog -->
+        <activity
+            android:name="net.ememed.doctor2.activity.AlertDialog"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name="net.ememed.doctor2.activity.ShowBigImage"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="net.ememed.doctor2.activity.NewsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- 设置环信应用的appkey -->
+        <!-- 设置环信应用的appkey -->
+        <!-- 正式环境： android:value="ememed#ememeduserofficial" -->
+        <!-- 测试环境： android:value="ememed#ememeddoctor" -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="ememed#ememeduserofficial" />
+
+        <service android:name="com.easemob.chat.EMChatService" />
+        <!--
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name="net.ememed.doctor2.activity.LogonResultActivity"
+            android:label="@string/title_activity_logon_result" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.VerifingActivity"
+            android:label="@string/title_activity_logon_result" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.VerifyFailedActivity"
+            android:label="@string/title_activity_logon_result" >
+        </activity>
+        <activity
+            android:name="net.ememed.doctor2.activity.VerifySuccessActivity"
+            android:label="@string/title_activity_logon_result" >
+        </activity>
+
+        <!-- umeng update -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".baike.BaikeVisitorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".baike.BaikeShareListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.AlertMobileActivity"
+            android:screenOrientation="portrait" />
+        
+        <!-- communication group -->
+        <activity
+            android:name=".activity.CommunicationGroupCreateActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    <!-- 请注意包名不要是com.example.jpushdemo，以免冲突 -->
+    <permission
+        android:name="net.ememed.doctor2.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="net.ememed.doctor2.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE_EMEMED" />
+
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE_EMEMED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Optional for location -->
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+</manifest>

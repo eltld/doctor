@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topbg_green"
+        android:minHeight="48dp" >
+
+        <RadioGroup
+            android:id="@+id/rg_contact_tab_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_patient_tab"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="我的病友"
+                android:textColor="@color/contact_title_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_single_tab"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的朋友"
+                android:textColor="@color/contact_title_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_groups_tab"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的群组"
+                android:textColor="@color/contact_title_selector" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+
+    <com.viewpagerindicator.CustomViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

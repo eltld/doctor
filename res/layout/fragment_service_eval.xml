@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <net.ememed.doctor2.widget.RefreshListView
+         android:id="@+id/lv_custom_evas"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollingCache="false" />
+    
+    <include
+        layout="@layout/u_empty_view"
+        android:visibility="gone" />
+    <include
+        layout="@layout/u_net_unavailable"
+        android:visibility="gone" />
+</LinearLayout>

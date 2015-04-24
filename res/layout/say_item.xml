@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+ <!--    <include
+        layout="@layout/activity_my_baike"
+        android:visibility="gone" />
+    <include
+        layout="@layout/activity_other_baike_head"
+        android:visibility="gone" /> -->
+
+    <RelativeLayout
+        android:id="@+id/rl_shuoshuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_context"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="60dp"
+                    android:singleLine="true"
+                    android:text="及时发货考司法后发货时发放后阿海珐Iofhi案发啊阿斗撒"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pic_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <net.ememed.doctor2.widget.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnWidth="50dp"
+                    android:horizontalSpacing="5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:verticalSpacing="5dp" >
+                </net.ememed.doctor2.widget.MyGridView>
+
+                <TextView
+                    android:id="@+id/tv_pic_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/TextColorGray" />
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll_read_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:minWidth="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" >
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/caller_ioc" />
+
+                    <TextView
+                        android:id="@+id/tv_read_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="0"
+                        android:textColor="@color/grayness" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_praise_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/ll_read_layout"
+                    android:minWidth="35dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_praise"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/praise_ioc_n" />
+
+                    <TextView
+                        android:id="@+id/tv_praise_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="0"
+                        android:textColor="@color/grayness" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_comment_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/ll_praise_layout"
+                    android:minWidth="35dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_comment"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/discuss_ioc" />
+
+                    <TextView
+                        android:id="@+id/tv_comment_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="0"
+                        android:textColor="@color/grayness" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_share_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/ll_comment_layout"
+                    android:minWidth="35dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_share"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/share_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_share_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="0"
+                        android:textColor="@color/grayness" />
+                </LinearLayout>
+                
+                <TextView 
+	                android:id="@+id/tv_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:maxWidth="45dp"
+	                android:paddingBottom="8dp"
+	                android:paddingTop="8dp"
+	                android:layout_marginLeft="5dp"
+	                android:layout_toRightOf="@+id/ll_share_layout"
+	                android:textColor="@color/topbg_green"
+	                android:singleLine="true"
+	                android:ellipsize="end"
+	                android:text="张三李"
+                />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:layout_alignParentRight="true"
+                    android:text="15-01-20 15:41"
+                    android:textColor="@color/grayness" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:minWidth="20dp"
+            android:src="@drawable/lab_new"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

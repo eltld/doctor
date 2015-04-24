@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/first_hint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="搜索历史"
+        android:textColor="#686868" />
+
+    <View
+        android:id="@+id/hint_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cacaca" />
+
+    <ListView
+        android:id="@+id/auto_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#cacaca"
+        android:dividerHeight="0.5dp"
+        android:listSelector="#cacaca"
+        android:cacheColorHint="@android:color/transparent"
+        android:overScrollMode="always"
+        android:scrollbars="none"
+         >
+    </ListView>
+
+    <View
+        android:id="@+id/hint_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cacaca" />
+
+    <LinearLayout
+        android:id="@+id/last_hint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/scjl_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:background="@android:color/transparent"
+            android:text="清除搜索历史"
+            android:textColor="#686868" />
+    </LinearLayout>
+
+</LinearLayout>

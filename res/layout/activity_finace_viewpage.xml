@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <!--  
+    <net.ememed.doctor2.finace.adapter.ListViewForScrollView
+  -->
+  	<net.ememed.doctor2.widget.RefreshListView
+        android:id="@+id/lv_contact_class"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/medical_history_bg_fenge"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+  	<ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/medical_history_bg_fenge" />
+ <!--  
+    <TextView
+        android:id="@+id/cash_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/finace_light_orange"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:text="查看更多"
+        android:visibility="gone" />
+--> 	
+</LinearLayout>

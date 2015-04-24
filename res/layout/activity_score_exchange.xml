@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf"
+    android:orientation="vertical" >
+	<include layout="@layout/top_bar_doctor_green" />
+	<ScrollView 
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+	    >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F79D00"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="可用薏米花"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_total_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:textSize="15sp"
+            android:text="现金兑换" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_money_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cash_bg" 
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="¥ 50"/>
+            <TextView
+                android:id="@+id/tv_score_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3000薏米花"
+                android:textSize="15sp"
+                />
+            <Button 
+                android:id="@+id/btn_score_exchange1"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+				android:textColor="@drawable/txt_score_exchange"	                
+                android:background="@drawable/btn_score_exchange"
+                android:text="兑换"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                />
+            <TextView 
+                android:id="@+id/txt_score_exchange1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textColor="#808080"	                
+                android:text="薏米花不足"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#dfdfdf" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_money_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cash_bg" 
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="¥ 100"/>
+            <TextView
+                android:id="@+id/tv_score_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5500薏米花"
+                android:textSize="15sp"
+                />
+            <Button 
+                android:id="@+id/btn_score_exchange2"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+				android:textColor="@drawable/txt_score_exchange"	                
+                android:background="@drawable/btn_score_exchange"
+                android:text="兑换"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                />
+            <TextView 
+                android:id="@+id/txt_score_exchange2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textColor="#808080"	                
+                android:text="薏米花不足"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#dfdfdf" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_money_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cash_bg" 
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="¥ 300"/>
+            <TextView
+                android:id="@+id/tv_score_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16000薏米花"
+                android:textSize="15sp"
+                />
+            <Button 
+                android:id="@+id/btn_score_exchange3"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+				android:textColor="@drawable/txt_score_exchange"	                
+                android:background="@drawable/btn_score_exchange"
+                android:text="兑换"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                />
+            <TextView 
+                android:id="@+id/txt_score_exchange3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textColor="#808080"	                
+                android:text="薏米花不足"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#dfdfdf" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+           <TextView
+                android:id="@+id/tv_money_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cash_bg" 
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="¥ 500"/>
+            <TextView
+                android:id="@+id/tv_score_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="27000薏米花"
+                android:textSize="15sp"
+                />
+            <Button 
+                android:id="@+id/btn_score_exchange4"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+				android:textColor="@drawable/txt_score_exchange"	                
+                android:background="@drawable/btn_score_exchange"
+                android:text="兑换"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                />
+            <TextView 
+                android:id="@+id/txt_score_exchange4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textColor="#808080"	                
+                android:text="薏米花不足"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="温馨提示：兑换成功后，现金将会转账到您的薏米账户，请从“财务详情”查看。" 
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:textColor="#404040"
+	    android:textSize="13sp"
+	    android:lineSpacingExtra="3dp"
+	    android:layout_marginTop="10dp"
+	    />
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

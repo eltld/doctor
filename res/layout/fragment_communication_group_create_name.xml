@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="为你的群起一个心仪的名称吧!" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tv_name"
+        android:background="@android:color/white"
+        android:hint="请填写群名称（不要超过15个字符）"
+        android:maxLength="15"
+        android:paddingLeft="16dp"
+        android:textSize="14sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_name"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="15" />
+
+</RelativeLayout>

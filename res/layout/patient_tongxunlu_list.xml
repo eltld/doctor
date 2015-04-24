@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include android:id="@+id/search_resource_back" layout="@layout/top_bar_doctor_green" />
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        >
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        
+	        android:orientation="vertical" >
+	
+	        <net.ememed.doctor2.widget.RefreshListView
+	            android:id="@+id/patient_tongxunlu_listview"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:scrollbars="none" />
+	     
+	    </LinearLayout>
+	
+	    <net.ememed.doctor2.widget.SideBar
+	        android:id="@+id/sideBar"
+	        android:layout_width="20dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="5dp"
+	       	android:layout_marginBottom="5dp"
+	        android:layout_gravity="right|center_vertical"
+	        android:background="@drawable/num_scroll_bg" />
+		
+	    <include layout="@layout/u_empty_view" android:visibility="gone" />	
+		<include layout="@layout/u_net_unavailable" android:visibility="gone" />
+	</FrameLayout>
+</LinearLayout>

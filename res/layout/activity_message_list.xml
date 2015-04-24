@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reseda"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_doctor_green" />
+
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+        android:id="@+id/ptr_sms_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" >
+
+        <net.ememed.doctor2.widget.RefreshListView
+            android:id="@+id/sms_listview"
+            style="@style/listview_style"
+            android:layout_height="fill_parent"
+            android:divider="#f0f0f0"
+            android:dividerHeight="4dp" />
+
+        <include
+            layout="@layout/u_empty_view"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/u_net_unavailable"
+            android:visibility="gone" />
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+
+</LinearLayout>

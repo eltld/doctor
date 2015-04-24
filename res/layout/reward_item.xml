@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp" >
+
+      
+
+       <net.ememed.doctor2.widget.CircleImageView
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/civ_photo"
+           android:layout_width="55dp"
+           android:layout_height="55dp"
+           android:layout_marginLeft="10dp"
+           android:src="@drawable/avatar_medium"
+           app:border_color="@color/gray"
+           app:border_width="2dp" />
+
+     
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/civ_photo"
+            android:gravity="center_vertical"
+             >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="张三"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="500"
+                android:textColor="#ac1a29"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginTop="6dp"
+                android:singleLine="true"
+                android:text="写的很好！"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_content"
+                android:layout_marginRight="10dp"
+                android:text="2015-02-12"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

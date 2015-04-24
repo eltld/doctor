@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- enable -->
+    <item android:drawable="@drawable/step_1_pressed" android:state_selected="true"/>
+    <!-- default -->
+    <item android:drawable="@drawable/step_1_nor" />
+
+</selector>
